@@ -11,6 +11,7 @@ header_img: assets/images/bootstrap.jpg
 header_title: "Bootstrap"
 ---
 
+
 # Introduzione a Bootstrap
 
 Bootstrap è un **framework front-end open-source** che semplifica la progettazione di **siti web reattivi e mobile-first**. Sviluppato da Twitter, Bootstrap fornisce una raccolta di strumenti e componenti predefiniti per la creazione di layout complessi e stilizzati con facilità. Utilizzando HTML, CSS e JavaScript, Bootstrap permette di creare rapidamente pagine web consistenti e professionali.
