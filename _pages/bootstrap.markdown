@@ -7,7 +7,7 @@ title:  "Bootstrap"
 subtitle: "un accenno a Bootstrap"
 show_sidetoc: true
 header_type: hero #base, post, hero,image, splash
-header_img: assets/images/bootstrap.jpg
+header_img: assets/images/Microphone.jpg
 header_title: "Bootstrap"
 ---
 
@@ -59,7 +59,7 @@ Ecco un esempio di utilizzo della griglia di Bootstrap:
 ```
 <div class="container">
   <div class="row">
-    <div class="col-md-6" style="border: 1px solid black; background-color: #ba68c8;">
+    <div class="col-md-6" style="border: 1px solid black; background-color: #ba68c8; color: #FFFFFF;">
       Colonna 1
     </div>
     <div class="col-md-6" style="border: 1px solid black; background-color: #81c784;">
