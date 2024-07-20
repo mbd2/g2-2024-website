@@ -4,12 +4,16 @@
 
 layout: default-full
 title: "Home"
-subtitle: "un template per i progetti del master SoBigData"
+subtitle: ""
 show_sidetoc: true
 header_type: hero #base, post, hero,image, splash
-header_img: assets/images/stampo_biscotti.jpg
-header_title: "Evolution of Podcasts"
+header_img: assets/images/Microphone.jpg
+header_title: "Youtube e i Podcast: <br>
+L'Ascesa nella Nuova Era di Contenuti Digitali"
+subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
 ---
+<!-- Custom width and offset -->
+<div class="custom-col custom-offset"> </div>
 
 <div class="container py-3">
     <div class="row">
@@ -17,8 +21,10 @@ header_title: "Evolution of Podcasts"
         </div>
         <div class="col-md-6">
             <hr>
-            <p>Questo template è stato disegnato per realizzare i progettoni del master SoBigData.
-Il template proposto è basato su Bootstrap e Jekyll e include una serie di funzionalità che possono essere utili per la creazione di un sito web.</p>
+            <p>Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante all'interno della nostra quotidianità. La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”. Nella galassia dei nuovi media digitali, il podcast rappresenta un formato alternativo di comunicazione, un’ estensione delle attività quotidiane delle radio e degli editori, in cui trovano facile spazio contenuti di informazione, educazione e intrattenimento.
+            Ma come si è evoluto questo formato di contenuto? Quali sono i temi e gli argomenti che hanno guadagnato maggiore popolarità nel tempo? 
+            Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano.
+            </p>
             <hr>
         </div>
     </div>
