@@ -9,8 +9,9 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
 show_sidetoc: true
 header_type: hero #base, post, hero,image, splash
 header_img: assets/images/Microphone.jpg
-header_title: "Youtube e i Podcast: <br>
-L'Ascesa nella Nuova Era di Contenuti Digitali"
+header_title: "Youtube e i Podcast: <br> L'Ascesa nella Nuova Era di Contenuti Digitali"
+vega: true
+
 ---
 
 
@@ -21,8 +22,15 @@ Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante
 
 ## Testo
 
+<div class="container">
+  <hr>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/topic_tempo.json" width="container" style="width: 100%;"></vegachart>
+  <hr>
+</div>
+
+
 <hr>
-<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" width="container" style="width: 100%;"></vegachart>
 <hr>
 
 Bootstrap si basa su una filosofia **modulare** e **reattiva**, che permette di adattare i contenuti della pagina a **diverse dimensioni di schermo**, dai dispositivi mobili ai desktop. Questo è reso possibile grazie alla **griglia reattiva di Bootstrap**, che suddivide la pagina in una serie di righe e colonne flessibili. Questi elementi di base sono accompagnati da numerosi componenti UI predefiniti, come bottoni, modali, navbar e molto altro, che possono essere facilmente integrati e personalizzati.

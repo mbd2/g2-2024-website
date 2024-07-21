@@ -57,14 +57,21 @@ In questo modo, il grafico verrà visualizzato in modo responsive, adattandosi a
 <br>
 ### Esempio di inserimento di un chart realizzato con Altair 
 <hr>
-<vegachart schema-url="{{site.baseurl}}/assets/charts/chart_responsive.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/chart_responsive.json" width = "container" style="width: 100%"></vegachart>
 
 <hr>
 
 <hr>
-<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/topic_grafico.json" style="width: 100%"></vegachart>
 
 <hr>
+
+
+<div class="container">
+  <hr>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%;"></vegachart>
+  <hr>
+</div>
 
 
 - Il grafico è stato salvato come file `chart_responsive.json` e inserito nella cartella `assets/charts`.
