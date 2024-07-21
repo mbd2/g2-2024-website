@@ -1,0 +1,240 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "params": [
+    {
+      "name": "param_1",
+      "select": {
+        "fields": [
+          "channel_name"
+        ],
+        "type": "point"
+      },
+      "views": [
+        "view_1",
+        "view_2",
+        "view_3",
+        "view_4"
+      ]
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "data": {
+            "format": {
+              "type": "json"
+            },
+            "url": "altair-data-410d17942f129858738d13a2068b6651.json"
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "empty": false,
+                "field": "channel_name",
+                "param": "param_1",
+                "type": "nominal"
+              },
+              "value": "lightgray"
+            },
+            "tooltip": [
+              {
+                "field": "channel_name",
+                "title": "Canale",
+                "type": "nominal"
+              },
+              {
+                "field": "video_count",
+                "title": "Numero di Podcast",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "field": "video_count",
+              "title": "Numero di Podcast",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "channel_name",
+              "sort": "-x",
+              "title": "",
+              "type": "nominal"
+            }
+          },
+          "height": 400,
+          "mark": {
+            "type": "bar"
+          },
+          "name": "view_1",
+          "title": "Numero di Podcast per Canale",
+          "width": 800
+        },
+        {
+          "data": {
+            "format": {
+              "type": "json"
+            },
+            "url": "altair-data-d51e974b09b7182c273eb5478ba7a9ec.json"
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "empty": false,
+                "field": "channel_name",
+                "param": "param_1",
+                "type": "nominal"
+              },
+              "value": "lightgray"
+            },
+            "tooltip": [
+              {
+                "field": "channel_name",
+                "title": "Canale",
+                "type": "nominal"
+              },
+              {
+                "field": "views",
+                "title": "Visualizzazioni medie",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "field": "views",
+              "title": "Visualizzazioni medie",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "channel_name",
+              "sort": "-x",
+              "title": "",
+              "type": "nominal"
+            }
+          },
+          "height": 400,
+          "mark": {
+            "type": "bar"
+          },
+          "name": "view_2",
+          "title": "Visualizzazioni medie per canale",
+          "width": 800
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "data": {
+            "format": {
+              "type": "json"
+            },
+            "url": "altair-data-8b26abc6e37b37482d9d2d29078e4edb.json"
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "empty": false,
+                "field": "channel_name",
+                "param": "param_1",
+                "type": "nominal"
+              },
+              "value": "lightgray"
+            },
+            "tooltip": [
+              {
+                "field": "channel_name",
+                "title": "Canale",
+                "type": "nominal"
+              },
+              {
+                "field": "Subscribers",
+                "title": "Numero di Iscritti",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "field": "Subscribers",
+              "title": "Numero di Iscritti",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "channel_name",
+              "sort": "-x",
+              "title": "",
+              "type": "nominal"
+            }
+          },
+          "height": 400,
+          "mark": {
+            "type": "bar"
+          },
+          "name": "view_3",
+          "title": "Numero di Iscritti per Canale",
+          "width": 800
+        },
+        {
+          "data": {
+            "format": {
+              "type": "json"
+            },
+            "url": "altair-data-a24fc874c3dd7545ec68c09a44ea86c6.json"
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "empty": false,
+                "field": "channel_name",
+                "param": "param_1",
+                "type": "nominal"
+              },
+              "value": "lightgray"
+            },
+            "tooltip": [
+              {
+                "field": "channel_name",
+                "title": "Canale",
+                "type": "nominal"
+              },
+              {
+                "field": "durata_in_minuti",
+                "title": "Durata media (minuti)",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "format": ".0f"
+              },
+              "field": "durata_in_minuti",
+              "title": "Durata media (minuti)",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "channel_name",
+              "sort": "-x",
+              "title": "",
+              "type": "nominal"
+            }
+          },
+          "height": 400,
+          "mark": {
+            "type": "bar"
+          },
+          "name": "view_4",
+          "title": "Durata media dei Podcast per Canale",
+          "width": 800
+        }
+      ]
+    }
+  ]
+}

@@ -3,20 +3,25 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title:  "Bootstrap"
-subtitle: "un accenno a Bootstrap"
+title:  "Youtube e i Podcast: <br>
+L'Ascesa nella Nuova Era di Contenuti Digitali"
+subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
 show_sidetoc: true
 header_type: hero #base, post, hero,image, splash
 header_img: assets/images/Microphone.jpg
-header_title: "Bootstrap"
+header_title: "Youtube e i Podcast: <br>
+L'Ascesa nella Nuova Era di Contenuti Digitali"
 ---
 
 
-# Introduzione a Bootstrap
+# Introduzione
 
-Bootstrap è un **framework front-end open-source** che semplifica la progettazione di **siti web reattivi e mobile-first**. Sviluppato da Twitter, Bootstrap fornisce una raccolta di strumenti e componenti predefiniti per la creazione di layout complessi e stilizzati con facilità. Utilizzando HTML, CSS e JavaScript, Bootstrap permette di creare rapidamente pagine web consistenti e professionali.
+Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante all'interno della nostra quotidianità. La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”. Nella galassia dei nuovi media digitali, il podcast rappresenta un formato alternativo di comunicazione, un’ estensione delle attività quotidiane delle radio e degli editori, in cui trovano facile spazio contenuti di informazione, educazione e intrattenimento.
+            Secondo la ricerca IPSOS 2023, il 39% degli italiani ha ascoltato podcast nell’ultimo mese. In numeri assoluti, tutto ciò si traduce in circa 11.9 milioni di ascoltatori mensili di podcast in Italia.
 
-## Concetti Generali di Bootstrap
+## Testo
+
+<vegachart schema-url="g2-2024-website/assets/charts/combined_chart.json" style="width: 100%"></vegachart>
 
 Bootstrap si basa su una filosofia **modulare** e **reattiva**, che permette di adattare i contenuti della pagina a **diverse dimensioni di schermo**, dai dispositivi mobili ai desktop. Questo è reso possibile grazie alla **griglia reattiva di Bootstrap**, che suddivide la pagina in una serie di righe e colonne flessibili. Questi elementi di base sono accompagnati da numerosi componenti UI predefiniti, come bottoni, modali, navbar e molto altro, che possono essere facilmente integrati e personalizzati.
 
