@@ -19,18 +19,43 @@ vega: true
 
 Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante all'interno della nostra quotidianità. La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”. Nella galassia dei nuovi media digitali, il podcast rappresenta un formato alternativo di comunicazione, un’ estensione delle attività quotidiane delle radio e degli editori, in cui trovano facile spazio contenuti di informazione, educazione e intrattenimento.
             Secondo la ricerca IPSOS 2023, il 39% degli italiani ha ascoltato podcast nell’ultimo mese. In numeri assoluti, tutto ciò si traduce in circa 11.9 milioni di ascoltatori mensili di podcast in Italia.
+            <br>
+            <br>
+            <br>
+            ***Qui va la parte delle date con il grafico***
+            <br>
+            <br>
+            <br>
+Ma come si è evoluto questo formato di contenuto? Quali sono i temi e gli argomenti che hanno guadagnato maggiore popolarità nel tempo? 
+            Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano.
+            <br>
+            Il nostro dataset di analisi si compone di 14 mila youtube podcast, 24 canali, 20+ ore. I canali selezionati sono quelli più popolari secondo la classifica del seguente link: https://rephonic.com/charts/youtube/united-states/popular-podcasts.
+            <br>
+            <br>
+            <br>
+            ***Grafico crescita views***
+            <br>
+            <br>
+            <br>
+
 
 ## Testo
 
+
+
 <div class="container">
   <hr>
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/topic_tempo.json" width="container" style="width: 100%;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/topic_tempo.json" style="width:'container';"></vegachart>
   <hr>
 </div>
 
+<hr>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%"></vegachart>
 
 <hr>
-<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" width="container" style="width: 100%;"></vegachart>
+
+<hr>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%;"></vegachart>
 <hr>
 
 Bootstrap si basa su una filosofia **modulare** e **reattiva**, che permette di adattare i contenuti della pagina a **diverse dimensioni di schermo**, dai dispositivi mobili ai desktop. Questo è reso possibile grazie alla **griglia reattiva di Bootstrap**, che suddivide la pagina in una serie di righe e colonne flessibili. Questi elementi di base sono accompagnati da numerosi componenti UI predefiniti, come bottoni, modali, navbar e molto altro, che possono essere facilmente integrati e personalizzati.

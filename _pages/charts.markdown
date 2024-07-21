@@ -67,6 +67,10 @@ In questo modo, il grafico verrà visualizzato in modo responsive, adattandosi a
 <hr>
 
 
+<hr>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%;"></vegachart>
+<hr>
+
 <div class="container">
   <hr>
   <vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%;"></vegachart>
