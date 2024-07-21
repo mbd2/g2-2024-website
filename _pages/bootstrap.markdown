@@ -21,7 +21,9 @@ Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante
 
 ## Testo
 
-<vegachart schema-url="g2-2024-website/assets/charts/combined_chart.json" style="width: 100%"></vegachart>
+<hr>
+<vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart.json" style="width: 100%"></vegachart>
+<hr>
 
 Bootstrap si basa su una filosofia **modulare** e **reattiva**, che permette di adattare i contenuti della pagina a **diverse dimensioni di schermo**, dai dispositivi mobili ai desktop. Questo è reso possibile grazie alla **griglia reattiva di Bootstrap**, che suddivide la pagina in una serie di righe e colonne flessibili. Questi elementi di base sono accompagnati da numerosi componenti UI predefiniti, come bottoni, modali, navbar e molto altro, che possono essere facilmente integrati e personalizzati.
 
