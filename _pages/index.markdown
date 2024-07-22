@@ -5,6 +5,7 @@
 layout: default-full
 title: "Home"
 subtitle: ""
+vega: True
 show_sidetoc: true
 header_type: hero #base, post, hero,image, splash
 header_img: assets/images/Microphone.jpg
@@ -15,6 +16,92 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
 <!-- Custom width and offset -->
 <div class="custom-col custom-offset"> </div>
 
+<style>
+    .quote-box {
+        border: 2px solid #ccc;
+        padding: 35px;
+        margin: 35px 0; 
+        background-color: #181818;
+        font-style: italic;
+        position: relative;
+        outline: 2px solid #888;
+        border-radius: 12px; /* Arrotonda i bordi dell'outline */
+        pointer-events: none; /* Assicura che l'elemento non sia cliccabile */
+        color: white;
+    }
+    .quote-box::before {
+        content: "“";
+        font-size: 4em;
+        position: absolute;
+        left: 10px;
+        top: -10px;
+        right: -10px;
+        color: #ccc;
+    }
+    .quote-box::after {
+        content: "”";
+        font-size: 4em;
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+        color: #ccc;
+    }
+    .author {
+        text-align: right;
+        font-weight: bold;
+        margin-top: 20px;
+        color: white;
+    }
+</style>
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">
+        </div>
+        <div class="col-md-6">
+            <hr>
+            <p>Negli ultimi anni, i podcast si sono conquistati uno spazio sempre più importante all'interno delle nostre quotidianità.</p>
+            <p>La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive come Spotify inizialmente, e Youtube poi, hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”.</p> 
+            <p>Il termine nacque quando l'uso dei feed RSS divenne popolare per lo scambio di registrazioni audio su computer, palmari, lettori di musica digitale e anche telefoni cellulari. L'origine più accreditata del termine podcasting è un articolo apparso sul quotidiano britannico The Guardian a firma di Ben Hammersley, Audible Revolution, in cui l'articolista, per definire il nuovo fenomeno di file audio in formato MP3 disponibili su supporti facilmente trasportabili come l'iPod e la possibilità di costruire un palinsesto completamente digitale senza passare per l'etere, cercava di trovare un termine-ombrello che definisse il tutto.</p>  
+            <p>Secondo la ricerca IPSOS 2023, il 39% degli italiani ha ascoltato podcast nell’ultimo mese. In numeri assoluti, tutto ciò si traduce in circa 11.9 milioni di ascoltatori mensili di podcast in Italia.</p>
+            <p>Daria Corrias, autrice e documentarista radiofonica che abbiamo avuto il piacere di intervistare, si esprime così riguardo all'avvento dei Podcast nel nostro paese:</p>
+            <div class="quote-box">
+                Ricordo che c'erano moltissimi interrogativi e infinite discussioni su come questo 'Podcast' potesse rappresentare effettivamente un formato valido.
+                Siamo partiti tutti da 'Serial', che ha dato poi la forma al Podcast. E quindi inizialmente si pensava che il PodCast dovesse essere seriale, true crime e con un host molto presente. Quindi con una narrazione molto presente in primo piano. Il Podcast era quella roba là.
+                <div class="author">- Daria Corrias</div>
+            </div>
+            <p>Come ci conferma anche la nostra intervistata, quindi, i podcast erano strutturati in maniera orizzontale, vuol dire che comprendere appieno ogni episodio era necessario aver ascoltato quello precedente. Questo requisito, divenne via via sempre meno importante, fino al punto che oggi, la maggior parte dei Podcast, offrono un tipo di contenuto verticale.  
+            Infatti, i canali che abbiamo preso in considerazione per la nostra analisi, offrono questo tipo di contenuto.</p>
+            <div class="quote-box">
+                Da Serial sono passati 10 anni. Oggi nel 2024 abbiamo visto che il Podcast non è solo questo.
+                <div class="author">- Daria Corrias</div>
+            </div>
+            <p>Come ci conferma anche la nostra intervistata, quindi, i podcast erano strutturati in maniera orizzontale, vuol dire che comprendere appieno ogni episodio era necessario aver ascoltato quello precedente. Questo requisito, divenne via via sempre meno importante, fino al punto che oggi, la maggior parte dei Podcast, offrono un tipo di contenuto verticale.  
+            Infatti, i canali che abbiamo preso in considerazione per la nostra analisi, offrono questo tipo di contenuto.</p>
+            <div class="quote-box">
+                Da Serial sono passati 10 anni. Oggi nel 2024 abbiamo visto che il Podcast non è solo questo.
+                <div class="author">- Daria Corrias</div>
+            </div>
+            <p>Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano nel mese di Maggio 2024, dal seguente link:</p>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%;"></vegachart>                 
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/beeswarm_chart.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/temporal_chart 2.json" style="width: 80%; height: 100vh;"></vegachart>
+            </p>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+
+<div style="text-align: center;">
+    <h1 style="color: white; font-size: 48px;">Topic Modelling</h1>
+</div>
+
 <div class="container py-3">
     <div class="row">
         <div class="col-md-3 col-md-offset-3">
@@ -22,15 +109,6 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
         <div class="col-md-6">
             <hr>
             <p>Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante all'interno della nostra quotidianità. La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”. Nella galassia dei nuovi media digitali, il podcast rappresenta un formato alternativo di comunicazione, un’ estensione delle attività quotidiane delle radio e degli editori, in cui trovano facile spazio contenuti di informazione, educazione e intrattenimento.
-            Secondo la ricerca IPSOS 2023, il 39% degli italiani ha ascoltato podcast nell’ultimo mese. In numeri assoluti, tutto ciò si traduce in circa 11.9 milioni di ascoltatori mensili di podcast in Italia.
-
-            
-            <br>
-            <br>
-            <br>
-            ***Qui va la parte delle date con il grafico***
-            <br>
-            <br>
             <br>
             Ma come si è evoluto questo formato di contenuto? Quali sono i temi e gli argomenti che hanno guadagnato maggiore popolarità nel tempo? 
             Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano.
@@ -39,7 +117,38 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
             <br>
             <br>
             <br>
-            ***Grafico crescita views***
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/TOPIC_PROJECT_BLACK_VERO_3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
+            <br>
+            <br>
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/18816599"><script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+            <br>
+            </p>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div style="text-align: center;">
+    <h1 style="color: white; font-size: 48px;">Sentiment analysis</h1>
+</div>
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">
+        </div>
+        <div class="col-md-6">
+            <hr>
+            <p>Nell'era digitale, il successo dei podcast dipende fortemente dall'engagement con il pubblico. La nostra analisi ha esaminato il sentiment dei commenti ai video per capire come si evolvono le percezioni degli ascoltatori nel tempo.</p>
+            <p>I risultati sono chiari: negli anni analizzati, i commenti positivi rappresentano una porzione significativa delle interazioni, indicando una prevalenza di sentimenti favorevoli. Tuttavia, un fenomeno degno di nota è emerso: i commenti negativi sono in aumento rispetto agli anni precedenti. </p>
+            <br>
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/Polarity_Comments 2.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
+            <br>
+            <p>Questo trend solleva interrogativi importanti. Cosa sta alimentando l'incremento dei feedback negativi? È un fenomeno isolato o si verifica su tutte le piattaforme social? </p> 
+            <p>Capire le ragioni dietro l'aumento dei commenti negativi è cruciale per i creatori di contenuti. In un mondo sempre più connesso, mantenere un rapporto positivo con il proprio pubblico è una sfida complessa. Se da un lato, i commenti negativi possono indicare aree di miglioramento, dall'altro, potrebbero anche contribuire ad accrescere la visibilità e il dibattito attorno ai contenuti. </p>
             <br>
             <br>
             <br>
@@ -50,7 +159,9 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
 </div>
 
 
-# Topic Modelling
+<div style="text-align: center;">
+    <h1 style="color: white; font-size: 48px;">Analisi tracce audio</h1>
+</div>
 
 <div class="container py-3">
     <div class="row">
@@ -58,22 +169,15 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
         </div>
         <div class="col-md-6">
             <hr>
-            <p>Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante all'interno della nostra quotidianità. La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”. Nella galassia dei nuovi media digitali, il podcast rappresenta un formato alternativo di comunicazione, un’ estensione delle attività quotidiane delle radio e degli editori, in cui trovano facile spazio contenuti di informazione, educazione e intrattenimento.
+            <p>Ma come si è evoluto il suono dei podcast nel corso degli ultimi anni? Per rispondere a questa domanda abbiamo esaminato alcune caratteristiche audio dei 24 podcast, analizzando oltre 7500 episodi. </p>
+            <p>Le variabili chiave oggetto di studio sono state l’energia RMS (rms_energy) che misura l’intensità media del segnale, il primo coefficiente cepstrale Mel (mfcc_1_mean) che cattura informazioni sulla “qualità” o il “colore” della voce ed è influenzato dall’energia dello spettro, il ritmo (tempo) del parlato, la frequenza media del pitch (pitch_mean), utile nel determinare quanto “alta” o “bassa” sia la voce in media in termini di frequenze, il tasso di attraversamento dello zero (zero_crossings_rate), il centroide spettrale medio (spectral_centroid_mean) e il roll-off spettrale medio (spectral_rolloff_mean).</p>
             <br>
             <br>
-            <br>
-            ***Qui va la parte delle date con il grafico***
-            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_audio3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <br>
-            Ma come si è evoluto questo formato di contenuto? Quali sono i temi e gli argomenti che hanno guadagnato maggiore popolarità nel tempo? 
-            Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano.
-            <br>
-            Il nostro dataset di analisi si compone di 14 mila youtube podcast, 24 canali, 20+ ore. I canali selezionati sono quelli più popolari secondo la classifica del seguente link: https://rephonic.com/charts/youtube/united-states/popular-podcasts.
-            <br>
-            <br>
-            <br>
-            ***Grafico crescita views***
+            <p>Uno dei risultati riscontrati è stato un marcato cambiamento nelle audio features intorno alla fine del 2019. Abbiamo osservato un picco significativo sia per quanto riguarda l’energia espressa (rms_energy) che le caratteristiche del timbro vocale (mfcc_1_mean), seguito da un declino nell’andamento delle stesse variabili. Un’ipotesi è che, in una prima fase, a seguito dell’aumento della popolarità dei podcast i creatori potrebbero aver sperimentato stili più energici e dal ritmo più serrato per distinguersi e tenere alta l’attenzione degli ascoltatori.  </p> 
+            <p>Dopo il 2020 emergono tendenze interessanti nel complesso paesaggio sonoro dei podcast. Possiamo notare una diminuzione dell’intensità e del ritmo percepito, così come del primo coefficiente MFCC. Al contrario, le variabili pitch_mean (altezza della voce), zero_crossings_rate (presenza di suoni acuti) e spectral_centroid_mean (brillantezza del suono) mostrano un andamento crescente. I podcaster sembrano aver optato per uno stile di presentazione più rilassato ma con una maggiore enfasi sulla definizione del suono. I cambiamenti nello stile vocale potrebbero essere legati all’esperienza di fruizione del medium degli utenti: voci più acute e brillanti possono risultare maggiormente intelligibili, soprattutto in ambienti di ascolto non ideali (ad esempio, durante gli spostamenti e in presenza di rumore di fondo). Inoltre, sempre in riferimento all’adattamento tecnologico, le preferenze inerenti ai meccanismi diffusivi potrebbero essersi indirizzate verso suoni che vengono meglio riprodotti su dispositivi mobili e auricolari wireless, e la combinazione di suoni più chiari ma meno intensi potrebbe rendere l’ascolto più confortevole se protratto per lunghi periodi. </p>
             <br>
             <br>
             <br>
@@ -82,6 +186,63 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
         </div>
     </div>
 </div>
+
+
+
+<div style="text-align: center;">
+    <h1 style="color: white; font-size: 48px;">Frame color analysis</h1>
+</div>
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">
+        </div>
+        <div class="col-md-6">
+            <hr>
+            <div style="text-align: center;">
+                <h2 style="color: white; font-size: 28px;">Frame</h2>
+            </div>
+            <br>
+            <p>Molto spesso gli Youtuber, e nella nostra fattispecie i Podcaster, non considerano, o mettono in secondo piano, la scelta dei colori preponderanti all’interno delle loro inquadrature. Anche i fruitori stessi credono che i colori che partecipano alla creazione dell’ambiente virtuale all’interno del quale si svolge il podcast non influenzi il loro engagement.</p>
+            <p>In realtà, la scelta dei colori e conseguentemente l’ambient che viene a crearsi all’interno di un podcast, risulta essere una variabile di primaria importanza, che innesca nel fruitore un senso di comfort e cattura involontariamente l’attenzione. Questo comporta un vantaggio enorme per il podcaster che mira ad ottenere un forte coinvolgimento del pubblico e alla sua fidelizzazione nel tempo.</p>
+            <p>Consapevoli dell’importanza di questa variabile, è stato condotto uno studio sulla totalità dei podcast presi in analisi per individuare quali fossero i colori principali più utilizzati dai podcaster statunitensi di successo.</p>
+            <p>Dato che nel tempo, vuoi per moda, per cultura o aspettativa degli utenti, i colori più attraenti posso aver subito delle modifiche, lo studio è stato condotto su uno span temporale il più largo possibile, così da capirne la sua tendenza nel tempo.</p>
+            <p>Estrapolando diversi frame da ogni podcast in analisi, ed estrapolando i colori più rilevanti per ogni podcast, è emersa la seguente evoluzione dell’utilizzo dei colori di scena.</p>
+            <br>
+            <br>
+            <br>
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/18803566"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            <br>
+            <br>
+            <br>
+            <p>Prima di trarre delle conclusioni da quanto mostra il grafico, è necessario precisare che i colori riportati sono i colori utilizzati in scena al netto della loro luminosità e saturazione. Difatti dai frame sono stati estrapolati i valori “HSL”, ossia Hue Saturation Lightness, e sono stati rimossi i valori di Saturation e Lightness, in modo tale da ottenere i colori reali utilizzati in scena senza l’influenza della loro esposizione. Considerare la loro esposizione, avrebbe portato la nostra analisi all’individuazione di una mera scala di grigi. Questo perché, anticipando leggermente le conclusioni, l’illuminazione della scena, nella stragrande maggioranza dei casi, mira a creare un ambiente “caldo e accogliente”. L’eliminazione di questa variabile ci fornisce una rappresentazione reale del colore degli oggetti portati in scena.</p>
+            <p>Precisato questo, risulta evidente come nel corso degli anni, partendo da una scelta di colori prettamente freddi, vi sia stato un trend di avvicinamento ai colori caldi. Questo perché, è noto come i colori caldi tendono a creare rilassatezza e comfort in chi guarda e trasmettono una sensazione di calore umano, familiarità e vicinanza, cruciali per tenere l’utente incollato allo schermo. L’utilizzo di questa tipologia di colori in dei contenuti audio-visivi molto lunghi che possono durare anche ore, come i podcast, risulta essere una variabile tutt’altro che trascurabile. Naturalmente generalizzare in toto non è corretto. Vi sono delle eccezioni dovute anche alla scelta stilistica, necessità di contestualizzazione della scena in base all’argomento trattato e volontà di differenziazione, ma il trend generale tende proprio ai colori caldi.</p>
+            <br>
+            <br>
+            <div style="text-align: center;">
+                <h2 style="color: white; font-size: 28px;">Thumbnails</h2>
+            </div>
+            <br>
+            <p>La medesima analisi è stata condotta anche sulle thumbnails. Le thumbnails sono le immagini di copertina che vediamo ad esempio nella Homepage di Youtube. Le immagini di copertina svolgono un ruolo cruciale per il successo di un determinato video. Esse sono, a primo impatto, ciò che per prime catturano l’attenzione dell’utente e, contrariamente a quanto si pensi, possono essere il principale driver che porta l’utente a scegliere di visualizzare o meno un determinato video.</p>
+            <br>
+            <br>
+            <br>
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/18803719"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            <br>
+            <br>
+            <p>Per estrapolare i risultati sulle thumbnails è stata usata la stessa identica logica utilizzata per i frame.</p>
+            <p>Non stupisce affatto come i risultati ottenuti per le thumbnails siano quasi sovrapponibili a quelli dei frame, ma questa volta non c’è spazio per le eccezioni. La scelta dei colori qui è dettata quasi totalmente dalla necessità di attirare gli utenti e si lascia molto meno spazio a scelte stilistiche personali.</p>
+            <p>Qui siamo nella fase della scelta. Una delle più importanti. L’utente deve decidere se guardare o meno un determinato contenuto. Nel momento della scelta, l’utente deve sentirsi catturato e invogliato a cliccare. Il click deve essere quasi una scelta impulsiva e difatti i colori caldi tramettono anche sensazioni di vitalità, energia, entusiasmo e gioia. Inoltre, inutile nascondersi dietro a un dito, le copertine, per sfruttare al massimo il loro potenziale, devono anche tendere al “clickbaiting”, ossia creare una sensazione di stupore, attesa e curiosità sproporzionate rispetto al reale contenuto del video. Non è un caso che i segnali di allerta o pericolo che per natura devono richiamare l’attenzione, siano di colore rosso, giallo o arancione… ossia colori caldi (che sono anche quelli più frequenti nei grafici mostrati dallo studio condotto).</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            </p>
+            <hr>
+        </div>
+    </div>
+</div>
+
 
 <div class="row pb-5">
     <div class="col-md-12 col-sm-12">
