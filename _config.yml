@@ -53,8 +53,8 @@ navbar:
       url: /#introduzione
     #- title: Topic Modelling
     #  url: /jekyll-ssg
-    - title: Topic Modeling
-      url: /#topic-modeling
+    - title: Topic Extraction
+      url: /#topic-extraction
     - title: Sentiment Analysis
       url: /#sentimenti-analysis
     - title: Audio

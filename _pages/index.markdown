@@ -152,15 +152,15 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
     <h1 style="color: white; font-size: 48px;">Introduzione</h1>
 </div>
 
-<div class="container py-3">
+<div style="position: relative; width: 100%; padding-right: 200px; padding-left: 200px;">
     <div class="row">
         <div class="col-md-3 col-md-offset-3">
         </div>
         <div class="col-md-6">
             <hr>
             <p>Negli ultimi anni, i podcast si sono conquistati uno spazio sempre più importante all'interno delle nostre quotidianità.</p>
-            <p>La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive come Spotify inizialmente, e Youtube poi, hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”.</p> 
-            <p>Il termine nacque quando l'uso dei feed RSS divenne popolare per lo scambio di registrazioni audio su computer, palmari, lettori di musica digitale e anche telefoni cellulari. L'origine più accreditata del termine podcasting è un articolo apparso sul quotidiano britannico The Guardian a firma di Ben Hammersley, Audible Revolution, in cui l'articolista, per definire il nuovo fenomeno di file audio in formato MP3 disponibili su supporti facilmente trasportabili come l'iPod e la possibilità di costruire un palinsesto completamente digitale senza passare per l'etere, cercava di trovare un termine-ombrello che definisse il tutto.</p>  
+            <p>Il termine nacque quando l'uso dei feed RSS divenne popolare per lo scambio di registrazioni audio su computer, palmari, lettori di musica digitale e anche telefoni cellulari. L'origine più accreditata del termine podcasting è un articolo apparso sul quotidiano britannico The Guardian a firma di Ben Hammersley, Audible Revolution, in cui l'articolista, per definire il nuovo fenomeno di file audio in formato MP3 disponibili su supporti facilmente trasportabili come l'iPod e la possibilità di costruire un palinsesto completamente digitale senza passare per l'etere, cercava di trovare un termine-ombrello che definisse il tutto.</p>
+            <p>La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive come Spotify inizialmente, e Youtube poi, hanno contribuito a renderli uno dei prodotti principali della nostra “dieta mediatica”.</p>   
             <p>Secondo la ricerca IPSOS 2023, il 39% degli italiani ha ascoltato podcast nell’ultimo mese. In numeri assoluti, tutto ciò si traduce in circa 11.9 milioni di ascoltatori mensili di podcast in Italia.</p>
             <div class="container">
                 <div class="header">
@@ -173,23 +173,16 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             </div>
             <p>Daria Corrias, autrice e documentarista radiofonica che abbiamo avuto il piacere di intervistare, si esprime così riguardo all'avvento dei Podcast nel nostro paese:</p>
             <div class="quote-box">
-                Ricordo che c'erano moltissimi interrogativi e infinite discussioni su come questo 'Podcast' potesse rappresentare effettivamente un formato valido.
-                Siamo partiti tutti da 'Serial', che ha dato poi la forma al Podcast. E quindi inizialmente si pensava che il PodCast dovesse essere seriale, true crime e con un host molto presente. Quindi con una narrazione molto presente in primo piano. Il Podcast era quella roba là.
+                Da Serial sono passati 10 anni. Oggi nel 2024 abbiamo visto che il Podcast non è solo questo.
                 <div class="author">- Daria Corrias</div>
             </div>
-            <p>Come ci conferma anche la nostra intervistata, quindi, i podcast erano strutturati in maniera orizzontale, vuol dire che comprendere appieno ogni episodio era necessario aver ascoltato quello precedente. Questo requisito, divenne via via sempre meno importante, fino al punto che oggi, la maggior parte dei Podcast, offrono un tipo di contenuto verticale.  
+            <p>Come ci conferma anche la nostra intervistata, quindi, i podcast erano strutturati in maniera orizzontale, vuol dire che per comprendere appieno ogni episodio era necessario aver ascoltato quello precedente. Questo requisito, divenne via via sempre meno importante, fino al punto che oggi, la maggior parte dei Podcast, offrono un tipo di contenuto verticale.  
             Infatti, i canali che abbiamo preso in considerazione per la nostra analisi, offrono questo tipo di contenuto.</p>
             <div class="quote-box">
                 Da Serial sono passati 10 anni. Oggi nel 2024 abbiamo visto che il Podcast non è solo questo.
                 <div class="author">- Daria Corrias</div>
             </div>
-            <p>Come ci conferma anche la nostra intervistata, quindi, i podcast erano strutturati in maniera orizzontale, vuol dire che comprendere appieno ogni episodio era necessario aver ascoltato quello precedente. Questo requisito, divenne via via sempre meno importante, fino al punto che oggi, la maggior parte dei Podcast, offrono un tipo di contenuto verticale.  
-            Infatti, i canali che abbiamo preso in considerazione per la nostra analisi, offrono questo tipo di contenuto.</p>
-            <div class="quote-box">
-                Da Serial sono passati 10 anni. Oggi nel 2024 abbiamo visto che il Podcast non è solo questo.
-                <div class="author">- Daria Corrias</div>
-            </div>
-            <p>Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano nel mese di Maggio 2024, dal seguente link:</p>
+            <p>Per effettuare le nostre analisi, ci siamo focalizzati sugli Stati Uniti e abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube nel mese di Maggio 2024, a questo <a title="Link" href="https://rephonic.com/charts/youtube/united-states/popular-podcasts">Link</a></p>
             <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>                 
             <br>
             <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
@@ -205,31 +198,42 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
 
 
 
-<div id="topic-modeling" class="anchor-offset" style="text-align: center;">
-    <h1 style="color: white; font-size: 48px;">Topic Modelling</h1>
+<div id="topic-extraction" class="anchor-offset" style="text-align: center;">
+    <h1 style="color: white; font-size: 48px;">Topic Extraction</h1>
 </div>
 
-<div class="container py-3">
+<div style="position: relative; width: 100%; padding-right: 200px; padding-left: 200px;">
     <div class="row">
         <div class="col-md-3 col-md-offset-3">
         </div>
         <div class="col-md-6">
             <hr>
-            <p>Negli ultimi anni, i podcast hanno conquistato uno spazio sempre più importante all'interno della nostra quotidianità. La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”. Nella galassia dei nuovi media digitali, il podcast rappresenta un formato alternativo di comunicazione, un’ estensione delle attività quotidiane delle radio e degli editori, in cui trovano facile spazio contenuti di informazione, educazione e intrattenimento.
-            <br>
-            Ma come si è evoluto questo formato di contenuto? Quali sono i temi e gli argomenti che hanno guadagnato maggiore popolarità nel tempo? 
-            Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano.
-            <br>
-            Il nostro dataset di analisi si compone di 14 mila youtube podcast, 24 canali, 20+ ore. I canali selezionati sono quelli più popolari secondo la classifica del seguente link: https://rephonic.com/charts/youtube/united-states/popular-podcasts.
-            <br>
-            <br>
+            <p>Quali sono i temi e quali argomenti sono stati trattati nel tempo?</p> 
+            <p>Dalle trascrizioni ottenute dai diversi episodi dei Podcast presenti in YouTube abbiamo estratto. i topic definiti sono 11 e sono sono: politics', 'sports', 'economy', 'health', 'technology', 'culture', 'education','environment','crime' e 'entertainment'. </p>
+            <p>Specifichiamo che nella categoria crime possono rientrare non sono episodi True Crime ma anche crimini di guerra, crimini politici ecc. Education viene intesa invece non solo come educazione scolastica ma anche temi che riguardano la formazione lavorativa, la crescita personale, temi che possono riguardare il razzismo, quindi tutti temi che hanno a che fare con la crescita personale degli individui o dell’intervistato.</p>
+            <p>Nel tempo abbiamo visto quale è stata l’evoluzione dei temi nei podcast:</p> 
             <br>
             <vegachart schema-url="{{site.baseurl}}/assets/charts/TOPIC_PROJECT_BLACK_VERO_3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
             <br>
+            <p>Dal 2013 i temi ricorrenti per gli episodi podcast da noi analizzati erano tecnologia, con una preponderanza maggiore di questo tema sugli altri  e poi altri temi come crime, health e entertainment. Particolarmente interessante è vedere come il tema politics compaia nel 2017 per poi arrivare ad essere uno dei temi principali dal 2022 fino al 2024. C’è da sottolinerare però che il canale podcast MedaisTouch e il canale di Brian Tyler Cohen Podcast (che trattano principalmente di temi politici)sono quelli con il maggior numero di episodi sul complessivo rispetto a questi anni.</p>
+            <br>
+            <p>Di seguito invece abbiamo un grafico a bolle su quali sono i temi principalmente tratti rispetto agli argomenti. Se cliccate dentro la bolla è possibile visualizzare tutti i temi principalmente discussi all’interno dei diversi canali podcast.</p>
             <br>
             <div class="flourish-embed flourish-hierarchy" data-src="visualisation/18816599"><script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>
             <br>
+            <div class="container">
+                <div class="header">
+                    <button type="button" class="collapsible">Technical analysis</button>
+                </div>
+                <div class="content">
+                    <p>Tramite le API di Google siamo riusciti a scaricare circa 13.218 documenti complessivi. Per il preprocessing, abbiamo rimosso le annotazioni come [music], [laughing], ecc., utilizzando un’espressione regolare. Abbiamo tokenizzato il testo in parole singole, rimosso le stopword e i numeri, eliminato la punteggiatura e convertito tutte le parole in minuscolo.</p>
+                    <p>Abbiamo utilizzato il modello Word2Vec di Google-news-300 per creare un sistema di classificazione non supervisionato basato su embedding. Questo ci ha permesso di ottenere il vettore di embedding per ciascuna parola nel testo preprocessato utilizzando il modello Word2Vec, e di restituire la media di questi vettori.</p>
+                    <p>Successivamente, abbiamo definito un dizionario con diversi temi, quali: ‘politics’, ‘sports’, ‘economy’, ‘health’, ‘technology’, ‘culture’, ‘education’, ‘environment’, ‘crime’ e ‘entertainment’. Abbiamo calcolato la media dei vettori di embedding per le parole chiave di ciascun argomento.</p>
+                    <p>Una volta ottenuto il vettore dei topic, abbiamo calcolato la similarità del coseno tra quest’ultimo e il vettore delle trascrizioni, e abbiamo salvato per ciascun URL il topic con la similarità del coseno più alta.</p>
+                    <p>Da un punto di vista qualitativo, abbiamo controllato che i topic assegnati fossero corretti rispetto all’argomento trattato nel video. Su 90 video analizzati, abbiamo riscontrato un’assegnazione errata dei topic per 25 URL.</p>
+                </div>
+            </div>
             </p>
             <hr>
         </div>
@@ -241,7 +245,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
     <h1 style="color: white; font-size: 48px;">Sentiment analysis</h1>
 </div>
 
-<div class="container py-3">
+<div style="position: relative; width: 100%; padding-right: 200px; padding-left: 200px;">
     <div class="row">
         <div class="col-md-3 col-md-offset-3">
         </div>
@@ -256,12 +260,13 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <br>
             <p>Questo trend solleva interrogativi importanti. Cosa sta alimentando l'incremento dei feedback negativi? È un fenomeno isolato o si verifica su tutte le piattaforme social? </p> 
             <p>Capire le ragioni dietro l'aumento dei commenti negativi è cruciale per i creatori di contenuti. In un mondo sempre più connesso, mantenere un rapporto positivo con il proprio pubblico è una sfida complessa. Se da un lato, i commenti negativi possono indicare aree di miglioramento, dall'altro, potrebbero anche contribuire ad accrescere la visibilità e il dibattito attorno ai contenuti. </p>
+            </p>
             <div class="container">
                 <div class="header">
                     <button type="button" class="collapsible">Technical analysis</button>
                 </div>
                 <div class="content">
-                    <p>Abbiamo effettuato una sentiment analysis sui commenti ai video utilizzando VADER per determinare la polarità dei sentimenti espressi, sia positivi che negativi.</p>
+                    <p>Si è effettuata una sentiment analysis sui commenti ai video utilizzando VADER per determinare la polarità dei sentimenti espressi, sia positivi che negativi.</p>
                     <p>VADER è uno strumento di analisi del sentimento che assegna punteggi di positività o negatività a oltre 7.000 parole ed emoticon, basandosi su lessici di sentimenti noti.</p>
                     <p>Inoltre, utilizza una serie di regole di corrispondenza dei modelli scritte a mano, come le negazioni e gli intensificatori, per modificare il contributo dei punteggi delle parole originali al sentimento generale del testo.</p>
                     <p>Si sono utilizzati strumenti per pulire e preparare testi da commenti. Si sono utilizzati due funzioni di pulizia:
@@ -272,7 +277,6 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
                     <p>Per migliorare la qualità dei dati, sono stati selezionati solo i record con un valore di compound superiore a 0,6. Questo filtro ha ridotto il numero di record a circa 6 milioni, rispetto ai 18 milioni iniziali.</p>
                 </div>
             </div>
-            </p>
             <hr>
         </div>
     </div>
@@ -283,7 +287,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
     <h1 style="color: white; font-size: 48px;">Analisi tracce audio</h1>
 </div>
 
-<div class="container py-3">
+<div style="position: relative; width: 100%; padding-right: 200px; padding-left: 200px;">
     <div class="row">
         <div class="col-md-3 col-md-offset-3">
         </div>
@@ -298,10 +302,17 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <br>
             <p>Uno dei risultati riscontrati è stato un marcato cambiamento nelle audio features intorno alla fine del 2019. Abbiamo osservato un picco significativo sia per quanto riguarda l’energia espressa (rms_energy) che le caratteristiche del timbro vocale (mfcc_1_mean), seguito da un declino nell’andamento delle stesse variabili. Un’ipotesi è che, in una prima fase, a seguito dell’aumento della popolarità dei podcast i creatori potrebbero aver sperimentato stili più energici e dal ritmo più serrato per distinguersi e tenere alta l’attenzione degli ascoltatori.  </p> 
             <p>Dopo il 2020 emergono tendenze interessanti nel complesso paesaggio sonoro dei podcast. Possiamo notare una diminuzione dell’intensità e del ritmo percepito, così come del primo coefficiente MFCC. Al contrario, le variabili pitch_mean (altezza della voce), zero_crossings_rate (presenza di suoni acuti) e spectral_centroid_mean (brillantezza del suono) mostrano un andamento crescente. I podcaster sembrano aver optato per uno stile di presentazione più rilassato ma con una maggiore enfasi sulla definizione del suono. I cambiamenti nello stile vocale potrebbero essere legati all’esperienza di fruizione del medium degli utenti: voci più acute e brillanti possono risultare maggiormente intelligibili, soprattutto in ambienti di ascolto non ideali (ad esempio, durante gli spostamenti e in presenza di rumore di fondo). Inoltre, sempre in riferimento all’adattamento tecnologico, le preferenze inerenti ai meccanismi diffusivi potrebbero essersi indirizzate verso suoni che vengono meglio riprodotti su dispositivi mobili e auricolari wireless, e la combinazione di suoni più chiari ma meno intensi potrebbe rendere l’ascolto più confortevole se protratto per lunghi periodi. </p>
-            <br>
-            <br>
-            <br>
             </p>
+            <div class="container">
+                <div class="header">
+                    <button type="button" class="collapsible">Technical analysis</button>
+                </div>
+                <div class="content">
+                    <p>Per l'estrazione delle variabili relative all'audio abbiamo implementato un sistema basato sulle librerie Librosa e Pydub, ottimizzato per l'elaborazione parallela su 32 core tramite Dask. Il processo ha previsto l'utilizzo di Pydub per la manipolazione dei file audio applicando una normalizzazione del volume per ottenere una coerenza sonora tra i diversi file. Successivamente, quando necessario, è stato effettuato un ricampionamento a 44100 Hz utilizzando Librosa, assicurando così una frequenza di campionamento uniforme per tutte le analisi successive. La durata complessiva dell'audio processato ammonta all'incirca a 2765 ore. </p>
+                    <p>Le variabili estratte comprendono il tasso di attraversamento dello zero, l'energia RMS e la sua deviazione standard, la media e la deviazione standard del segnale, altre statistiche generali come la curtosi e l’asimmetria, il pitch medio e la sua deviazione standard, i primi 7 coefficienti MFCC, il centroide spettrale e la sua deviazione standard, il roll-off spettrale e la sua deviazione standard, e il tempo. Queste features sono state calcolate utilizzando le funzioni di Librosa, che offrono algoritmi ottimizzati per l'analisi del segnale audio. I risultati sono stati salvati in CSV e poi convogliati in un dataset unitamente ai metadati e altre variabili di interesse. </p>
+                    <p>Quanto alla visualizzazione dei dati, dopo la rimozione degli outlier, abbiamo applicato tecniche di raggruppamento mensile, standardizzazione delle variabili e media mobile. Per creare il grafico interattivo che mostra l'evoluzione temporale delle variabili audio standardizzate abbiamo utilizzato Altair. </p>
+                </div>
+            </div>
             <hr>
         </div>
     </div>
@@ -313,7 +324,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
     <h1 style="color: white; font-size: 48px;">Frame color analysis</h1>
 </div>
 
-<div class="container py-3">
+<div style="position: relative; width: 100%; padding-right: 200px; padding-left: 200px;">
     <div class="row">
         <div class="col-md-3 col-md-offset-3">
         </div>
@@ -353,11 +364,15 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <p>Per estrapolare i risultati sulle thumbnails è stata usata la stessa identica logica utilizzata per i frame.</p>
             <p>Non stupisce affatto come i risultati ottenuti per le thumbnails siano quasi sovrapponibili a quelli dei frame, ma questa volta non c’è spazio per le eccezioni. La scelta dei colori qui è dettata quasi totalmente dalla necessità di attirare gli utenti e si lascia molto meno spazio a scelte stilistiche personali.</p>
             <p>Qui siamo nella fase della scelta. Una delle più importanti. L’utente deve decidere se guardare o meno un determinato contenuto. Nel momento della scelta, l’utente deve sentirsi catturato e invogliato a cliccare. Il click deve essere quasi una scelta impulsiva e difatti i colori caldi tramettono anche sensazioni di vitalità, energia, entusiasmo e gioia. Inoltre, inutile nascondersi dietro a un dito, le copertine, per sfruttare al massimo il loro potenziale, devono anche tendere al “clickbaiting”, ossia creare una sensazione di stupore, attesa e curiosità sproporzionate rispetto al reale contenuto del video. Non è un caso che i segnali di allerta o pericolo che per natura devono richiamare l’attenzione, siano di colore rosso, giallo o arancione… ossia colori caldi (che sono anche quelli più frequenti nei grafici mostrati dallo studio condotto).</p>
-            <br>
-            <br>
-            <br>
-            <br>
             </p>
+            <div class="container">
+                <div class="header">
+                    <button type="button" class="collapsible">Technical analysis</button>
+                </div>
+                <div class="content">
+                    <p></p>
+                </div>
+            </div>
             <hr>
         </div>
     </div>
