@@ -63,12 +63,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: Muli;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fbf1ed;
+  background-color: #181818;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -480,7 +480,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fbf1ed;
+  background-color: #181818;
   border: 1px solid #dee2e6;
   max-width: 100%;
   height: auto;
@@ -3746,13 +3746,13 @@ input[type=button].btn-block {
   outline: none;
 }
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fbf1ed, 0 0 0 0.2rem rgba(47, 60, 72, 0.25);
+  box-shadow: 0 0 0 1px #181818, 0 0 0 0.2rem rgba(47, 60, 72, 0.25);
 }
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fbf1ed, 0 0 0 0.2rem rgba(47, 60, 72, 0.25);
+  box-shadow: 0 0 0 1px #181818, 0 0 0 0.2rem rgba(47, 60, 72, 0.25);
 }
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fbf1ed, 0 0 0 0.2rem rgba(47, 60, 72, 0.25);
+  box-shadow: 0 0 0 1px #181818, 0 0 0 0.2rem rgba(47, 60, 72, 0.25);
 }
 .custom-range::-moz-focus-outer {
   border: 0;
@@ -3911,8 +3911,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fbf1ed;
-  border-color: #dee2e6 #dee2e6 #fbf1ed;
+  background-color: #181818;
+  border-color: #dee2e6 #dee2e6 #181818;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -9275,13 +9275,13 @@ hr {
 }
 
 blockquote {
-  background-color: #f6e1d8;
-  color: #4c4b4c;
+  background-color: #0b0b0b;
+  color: #1d2023;
 }
 
 .footnotes {
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #dee2e6;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   border-top: 1px solid #6f7f8c;
@@ -9299,7 +9299,7 @@ a.reversefootnote:hover {
 }
 
 figcaption, caption, .figcaption, .caption {
-  color: #6c757d;
+  color: #dee2e6;
   max-width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -9464,19 +9464,19 @@ a.chulapa-pill-bg-dark:focus, a.chulapa-pill-bg-dark.focus {
 }
 
 .chulapa-pill-bg-body {
-  color: #212529;
-  background-color: #fbf1ed;
+  color: #fff;
+  background-color: #181818;
   border-style: solid;
   border-width: 1px;
-  border-color: #212529;
+  border-color: #fff;
 }
 a.chulapa-pill-bg-body:hover, a.chulapa-pill-bg-body:focus {
-  color: #212529;
-  background-color: #f2d1c3;
+  color: #fff;
+  background-color: black;
 }
 a.chulapa-pill-bg-body:focus, a.chulapa-pill-bg-body.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(251, 241, 237, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(24, 24, 24, 0.5);
 }
 
 .chulapa-text-body-color {
@@ -9629,7 +9629,7 @@ a.chulapa-pill-bg-body:focus, a.chulapa-pill-bg-body.focus {
 
 @media (min-width: 768px) {
   .hero-chulapa h1, .splash-chulapa h1, .splash-chulapa-image h1, .hero-chulapa-image h1 {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     font-weight: 300;
   }
   .hero-chulapa p, .splash-chulapa p, .splash-chulapa-image p, .hero-chulapa-image p {
@@ -9741,7 +9741,7 @@ a.chulapa-pill-bg-body:focus, a.chulapa-pill-bg-body.focus {
   -ms-word-wrap: break-word;
 }
 .header-chulapa hr {
-  background-color: #212529;
+  background-color: #fff;
 }
 .header-chulapa .header-chulapa-img {
   background-position: center;

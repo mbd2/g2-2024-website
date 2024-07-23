@@ -45,7 +45,7 @@ github_repo:
 navbar:
   style :  dual #non modificare
   brand: # è il titolo del sito e funziona da bottone (tipicamente per la homepage).
-    title :  "Podcast"
+    title :  "US Podcast Big Data Analysis"
     img: "assets/images/Logo_masthead.png"
     url: /
   nav:

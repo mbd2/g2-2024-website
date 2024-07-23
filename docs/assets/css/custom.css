@@ -1,8 +1,110 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+.hero-chulapa-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.7)), url("http://localhost:4000/assets/images/Microphone.jpg");
+  background-position: center 30%; /* Adjust the Y position (e.g., 20% down from the top) */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.col-md-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.col-md-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.col-md-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-md-3 {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+
+.col-md-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-md-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-md-6 {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+
+.col-md-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-md-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-md-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-md-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-md-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+header .p-name {
+  font-size: 3.5em; /* Adjust the size as needed */
+}
+
+.chulapa-subtitle.p-summary {
+  font-size: 1.5em; /* Adjust the size as needed */
+  margin-left: 8em;
+  margin-right: 8em;
+  color: #FFFFFF; /* Optional: Change text color if needed */
+  /* Add other styles here */
+}
+
+p {
+  margin-left: 1em; /* Space to the left of each paragraph */
+  margin-right: 1em; /* Space to the right of each paragraph */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+}
+
+p {
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+ul {
+  color: #FFFFFF;
+}
+
 #sezione-1, #sezione-11, #sezione-12, #mappa-delle-stragi, #galleria {
   scroll-margin-top: 60px; /* Imposta lo spazio di scorrimento prima dell'elemento ancorato */
 }
-
 
 .tech {
   background-color: rgba(216, 248, 217, 0.7);

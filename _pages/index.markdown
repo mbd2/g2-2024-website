@@ -162,18 +162,9 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <p>Il termine nacque quando l'uso dei feed RSS divenne popolare per lo scambio di registrazioni audio su computer, palmari, lettori di musica digitale e anche telefoni cellulari. L'origine più accreditata del termine podcasting è un articolo apparso sul quotidiano britannico The Guardian a firma di Ben Hammersley, Audible Revolution, in cui l'articolista, per definire il nuovo fenomeno di file audio in formato MP3 disponibili su supporti facilmente trasportabili come l'iPod e la possibilità di costruire un palinsesto completamente digitale senza passare per l'etere, cercava di trovare un termine-ombrello che definisse il tutto.</p>
             <p>La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive come Spotify inizialmente, e Youtube poi, hanno contribuito a renderli uno dei prodotti principali della nostra “dieta mediatica”.</p>   
             <p>Secondo la ricerca IPSOS 2023, il 39% degli italiani ha ascoltato podcast nell’ultimo mese. In numeri assoluti, tutto ciò si traduce in circa 11.9 milioni di ascoltatori mensili di podcast in Italia.</p>
-            <div class="container">
-                <div class="header">
-                    <button type="button" class="collapsible">Technical analysis</button>
-                </div>
-                <div class="content">
-                    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                    Traduzione del 1914 di H. Rackham</p>
-                </div>
-            </div>
             <p>Daria Corrias, autrice e documentarista radiofonica che abbiamo avuto il piacere di intervistare, si esprime così riguardo all'avvento dei Podcast nel nostro paese:</p>
             <div class="quote-box">
-                Da Serial sono passati 10 anni. Oggi nel 2024 abbiamo visto che il Podcast non è solo questo.
+                "Ricordo che c'erano moltissimi interrogativi e infinite discussioni su come questo 'Podcast' potesse rappresentare effettivamente un formato valido. Siamo partiti tutti da 'Serial', che ha dato poi la forma al Podcast. E quindi inizialmente si pensava che il PodCast dovesse essere seriale, true crime e con un host molto presente. Quindi con una narrazione molto presente in primo piano. Il Podcast era quella roba là."
                 <div class="author">- Daria Corrias</div>
             </div>
             <p>Come ci conferma anche la nostra intervistata, quindi, i podcast erano strutturati in maniera orizzontale, vuol dire che per comprendere appieno ogni episodio era necessario aver ascoltato quello precedente. Questo requisito, divenne via via sempre meno importante, fino al punto che oggi, la maggior parte dei Podcast, offrono un tipo di contenuto verticale.  
@@ -182,15 +173,47 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
                 Da Serial sono passati 10 anni. Oggi nel 2024 abbiamo visto che il Podcast non è solo questo.
                 <div class="author">- Daria Corrias</div>
             </div>
-            <p>Per effettuare le nostre analisi, ci siamo focalizzati sugli Stati Uniti e abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube nel mese di Maggio 2024, a questo <a title="Link" href="https://rephonic.com/charts/youtube/united-states/popular-podcasts">Link</a></p>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>                 
+            <p>Per effettuare le nostre analisi, ci siamo focalizzati sugli Stati Uniti e abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube nel mese di Maggio 2024, a <a title="Link" href="https://rephonic.com/charts/youtube/united-states/popular-podcasts" target="blank">questo link</a>.</p>
             <br>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <h4 style="text-align: center;">Grafico 1: Overview sui podcast in analisi</h4>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart_ulteriore.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/beeswarm_chart.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
             <br>
+            <br>
+            <h4 style="text-align: center;">Grafico 2: Numero di views e contenuti pubblicati per mese di pubblicazione</h4>
+            <p style="text-align: center;">Nel grafico a seguire vediamo secondo la data di pubblicazione quante sono le visualizzazioni totali dei podcast da noi esaminati, nel successivo invece calcoliamo quante sono state le pubblicazioni rispetto a quel mese. I due grafici sotto sono interattivi e mostrano le statistiche delle visualizzazioni e delle pubblicazioni per ciascun mese. L’utente può selezionare un mese per vedere i dettagli associati a quel periodo.</p> 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>                
+            <br>
+            <br>
+            <h4 style="text-align: center;">Grafico 3: frequenza di pubblicazione</h4>
+            <p style="text-align: center;">Nel grafico 3 vengono riportate le probabilità di osservare una specifica frequenza di pubblicazione e la probabilità di osservare al più una determinata frequenza di pubblicazione. La frequenza di pubblicazione è calcolata come l'inverso della differenza temporale tra le pubblicazioni in mesi, per cui se un canale pubblica ogni 30 giorni, la frequenza di pubblicazione sarà 1.  In generale l'80% dei canali ha una frequenza di pubblicazione pari a 18 pubblicazioni al mese. Rileva la bassa rilevanza di frequenze di pubblicazione comprese fra 18 e 26 pubblicazioni mensili, nonché i canali che pubblicano con cadenza quasi giornaliera fra le 26 e le 30 pubblicazioni al mese.</p> 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
+            <br>
+            <h4 style="text-align: center;">Grafico 4: frequenza di pubblicazione</h4>
+            <p style="text-align: center;">Nel grafico 4, per ciascun canale, vengono mostrati, in ordine temporale, i podcast, nonché le relative visualizzazioni evidenziate dalla dimensione del pallino.</p> 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/beeswarm_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
+            <br>
+            <br>
+            <h4 style="text-align: center;">Grafico 5: frequenza di pubblicazione</h4>
+            <p style="text-align: center;">Il grafico 5 riporta l'andamento temporale medio del numero di podcast pubblicati. Nel cordo del tempo il fenomeno dei podcast ha riscontrato un particolare successo sempre crescente.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/temporal_chart 2.json" style="width: 80%; height: 100vh;"></vegachart>
+            <h4 style="text-align: center; margin-top: -60px;">Grafico 6: frequenza di pubblicazione</h4>
+            <p style="text-align: center;">Il grafico 6 riporta invece, su una scala logaritmica, le puntate di maggior e minor successo per ciascun canale.</p> 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/std_views_podcast_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
             </p>
+            <div class="container">
+                <div class="header">
+                    <button type="button" class="collapsible">Technical analysis</button>
+                </div>
+                <div class="content">
+                    <p>Avevamo un obiettivo ben preciso: raccogliere dati da YouTube da un totale di 25 canali. Tuttavia, abbiamo dovuto ridurre il numero a 24, poiché uno dei canali non rispettava i criteri di un podcast. Per raccogliere i metadati che ci interessavano, come il titolo dell’episodio, il numero di visualizzazioni, la descrizione dell’episodio, la data di pubblicazione, il numero di “mi piace”, la durata e il numero di commenti, abbiamo utilizzato la libreria Selenium. Questo ci ha permesso di ottenere dati da 13.756 episodi.</p>
+                    <p>Per raccogliere informazioni sui commenti, abbiamo fatto ricorso a Google Console. Creando diversi token, siamo riusciti a utilizzare le API di YouTube per scaricare i metadati di primo livello relativi ai commenti. Questi metadati includevano l’autore del commento, il testo del commento e la data di pubblicazione.</p>
+                    <p>Abbiamo anche utilizzato le API di YouTube per ottenere le trascrizioni di questi video, riuscendo a ottenere circa 13.218 documenti. Per ottenere gli audio, abbiamo utilizzato una serie di librerie, tra cui Librosa, Pytube, Pydub e FFmpeg, che ci hanno permesso di ottenere circa 7500 file audio. Abbiamo utilizzato la libreria Requests per ottenere le miniature dei video e le librerie CV2 e Pytube per ottenere i frame dei video.</p>
+                    <p>Le caratteristiche che abbiamo ottenuto per il nostro dataset includono il nome del canale, l’URL, le visualizzazioni, la descrizione, la data di pubblicazione, i “mi piace”, la durata, i commenti, gli iscritti, la data di creazione del canale e le visualizzazioni del canale. Inoltre, abbiamo creato file CSV separati per gestire le trascrizioni e un file JSON per gestire i commenti, che contenevano più di 18.000.000 di commenti. Questo ci ha permesso di avere una visione completa e dettagliata dei podcast che abbiamo analizzato.</p>
+                </div>
+            </div>
             <hr>
         </div>
     </div>
@@ -209,14 +232,14 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         <div class="col-md-6">
             <hr>
             <p>Quali sono i temi e quali argomenti sono stati trattati nel tempo?</p> 
-            <p>Dalle trascrizioni ottenute dai diversi episodi dei Podcast presenti in YouTube abbiamo estratto. i topic definiti sono 11 e sono sono: politics', 'sports', 'economy', 'health', 'technology', 'culture', 'education','environment','crime' e 'entertainment'. </p>
-            <p>Specifichiamo che nella categoria crime possono rientrare non sono episodi True Crime ma anche crimini di guerra, crimini politici ecc. Education viene intesa invece non solo come educazione scolastica ma anche temi che riguardano la formazione lavorativa, la crescita personale, temi che possono riguardare il razzismo, quindi tutti temi che hanno a che fare con la crescita personale degli individui o dell’intervistato.</p>
+            <p>I temi trattati nel tempo sono stati estratti dalle trascrizioni di vari episodi di podcast presenti su YouTube. Abbiamo identificato i seguenti argomenti "politics", "sports", "economy", "health", "technology", "culture", "education", "environment", "crime", "entertainment" e "music".</p>
+            <p>È importante precisare che la categoria ‘crime’ può includere non solo episodi di True Crime, ma anche crimini di guerra, crimini politici, ecc. Inoltre, ‘education’ non si riferisce solo all’educazione scolastica, ma anche a temi che riguardano la formazione lavorativa, la crescita personale, temi che possono riguardare il razzismo, quindi tutti i temi che hanno a che fare con la crescita personale degli individui o dell’intervistato.</p>
             <p>Nel tempo abbiamo visto quale è stata l’evoluzione dei temi nei podcast:</p> 
             <br>
             <vegachart schema-url="{{site.baseurl}}/assets/charts/TOPIC_PROJECT_BLACK_VERO_3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
             <br>
-            <p>Dal 2013 i temi ricorrenti per gli episodi podcast da noi analizzati erano tecnologia, con una preponderanza maggiore di questo tema sugli altri  e poi altri temi come crime, health e entertainment. Particolarmente interessante è vedere come il tema politics compaia nel 2017 per poi arrivare ad essere uno dei temi principali dal 2022 fino al 2024. C’è da sottolinerare però che il canale podcast MedaisTouch e il canale di Brian Tyler Cohen Podcast (che trattano principalmente di temi politici)sono quelli con il maggior numero di episodi sul complessivo rispetto a questi anni.</p>
-            <br>
+            <p>Dal 2013 i temi ricorrenti per gli episodi podcast da noi analizzati erano tecnologia, con una preponderanza maggiore di questo tema sugli altri e poi altri temi come crime, health e entertainment. Particolarmente interessante è vedere come il tema politics compaia nel 2017 per poi arrivare ad essere uno dei temi principali dal 2022 fino al 2024. C’è da sottolinerare però che il canale podcast MedaisTouch e il canale di Brian Tyler Cohen Podcast (che trattano principalmente di temi politici) sono quelli con il maggior numero di episodi sul complessivo rispetto a questi anni.</p>
+            <p>Un altro aspetto interessante che emerge è come l’argomento crime sia ancora molto utilizzato dentro i podcast, anche in questo caso va fatto però presente che nel nostro dataframe ci sono diversi Canali che sono meramente True Crime come Let’s Read e Law&crimeNetwork e Baley Sarian, confermando che alcuni podcaster preferiscono utilizzare questo topic perché di maggiore appeal, come in precedenza detto da Daria Corrias.</p>
             <p>Di seguito invece abbiamo un grafico a bolle su quali sono i temi principalmente tratti rispetto agli argomenti. Se cliccate dentro la bolla è possibile visualizzare tutti i temi principalmente discussi all’interno dei diversi canali podcast.</p>
             <br>
             <div class="flourish-embed flourish-hierarchy" data-src="visualisation/18816599"><script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -330,6 +353,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         </div>
         <div class="col-md-6">
             <hr>
+            <br>
             <div style="text-align: center;">
                 <h2 style="color: white; font-size: 28px;">Frame</h2>
             </div>
@@ -337,9 +361,8 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <p>Molto spesso gli Youtuber, e nella nostra fattispecie i Podcaster, non considerano, o mettono in secondo piano, la scelta dei colori preponderanti all’interno delle loro inquadrature. Anche i fruitori stessi credono che i colori che partecipano alla creazione dell’ambiente virtuale all’interno del quale si svolge il podcast non influenzi il loro engagement.</p>
             <p>In realtà, la scelta dei colori e conseguentemente l’ambient che viene a crearsi all’interno di un podcast, risulta essere una variabile di primaria importanza, che innesca nel fruitore un senso di comfort e cattura involontariamente l’attenzione. Questo comporta un vantaggio enorme per il podcaster che mira ad ottenere un forte coinvolgimento del pubblico e alla sua fidelizzazione nel tempo.</p>
             <p>Consapevoli dell’importanza di questa variabile, è stato condotto uno studio sulla totalità dei podcast presi in analisi per individuare quali fossero i colori principali più utilizzati dai podcaster statunitensi di successo.</p>
-            <p>Dato che nel tempo, vuoi per moda, per cultura o aspettativa degli utenti, i colori più attraenti posso aver subito delle modifiche, lo studio è stato condotto su uno span temporale il più largo possibile, così da capirne la sua tendenza nel tempo.</p>
+            <p>Dato che nel tempo, vuoi per moda, per cultura o aspettativa degli utenti, i colori più attraenti possono aver subito delle modifiche, lo studio è stato condotto su uno span temporale il più largo possibile, così da capirne la sua tendenza nel tempo.</p>
             <p>Estrapolando diversi frame da ogni podcast in analisi, ed estrapolando i colori più rilevanti per ogni podcast, è emersa la seguente evoluzione dell’utilizzo dei colori di scena.</p>
-            <br>
             <br>
             <br>
             <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/18803566"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -357,7 +380,6 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <p>La medesima analisi è stata condotta anche sulle thumbnails. Le thumbnails sono le immagini di copertina che vediamo ad esempio nella Homepage di Youtube. Le immagini di copertina svolgono un ruolo cruciale per il successo di un determinato video. Esse sono, a primo impatto, ciò che per prime catturano l’attenzione dell’utente e, contrariamente a quanto si pensi, possono essere il principale driver che porta l’utente a scegliere di visualizzare o meno un determinato video.</p>
             <br>
             <br>
-            <br>
             <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/18803719"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
             <br>
             <br>
@@ -370,7 +392,17 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
                     <button type="button" class="collapsible">Technical analysis</button>
                 </div>
                 <div class="content">
-                    <p></p>
+                    <p>Per effettuare l’analisi sui frame sono stati necessari diversi passaggi tecnici che vanno dalla raccolta dei frame stessi fino all’estrapolazione dei colori e quindi dei risultati.</p>
+                    <p><strong>Estrazione Frame</strong></p>
+                    <p>L’estrazione dei frame è avvenuta per mezzo della libreria pytube per scaricare video e cv2 per l'elaborazione delle immagini. Grazie a quest’ultima libreria è stato possibile esaminare i singoli fotogrammi, estraendo i più rilevanti. Essendo l’obiettivo dell’analisi quello di rilevare tutti i colori utilizzati in scena, la logica costruita per mezzo del codice è stata quella di rilevare ogni cambiamento di inquadratura e catturare un frame per ogni inquadratura. Per fare questo, ogni fotogramma del video è stato convertito in scala di grigi e calcolato l’istogramma dei livelli di grigio. Gli istogrammi dei fotogrammi consecutivi sono stati poi confrontati utilizzando la correlazione. Qualora la correlazione fosse risultata al di sotto di una certa soglia (“threshold”), veniva identificato un cambio di scena e quindi veniva salvato il fotogramma corrispondente.
+                    Inoltre, è stata anche implementata una logica grazie alla quale, in caso di stessa inquadratura ripetuta, il frame catturato veniva ignorato (per evitare double counting). Per fare questo è stato calcolato un hash delle immagini (usando “imagehash.phash”) per i fotogrammi individuati come cambio di scena. Gli hash dei fotogrammi sono stati confrontati con una soglia di somiglianza (hash_similarity_threshold) e solo i fotogrammi con hash sufficientemente diversi sono stati considerati cambi di scena unici con conseguente salvataggio del fotogramma.
+                    Man mano che i video venivano scaricati ed analizzati, il codice li eliminava automaticamente al termine dell’analisi per preservare lo spazio su disco.</p>
+                    <p><strong>Estrazione colore dai frame</strong></p>
+                    <p>L’analisi dei frame invece è avvenuta utilizzando la libreria PIL per la manipolazione delle immagini e sklearn per il clustering dei colori. Ogni immagine viene ridimensionata per velocizzare l'elaborazione, convertita in un array numpy e aggregata in un’unica immagine. Viene poi applicato il K-means clustering sui pixel aggregati per identificare il colore dominante principale. Per ogni colore dominante trovato, vengono calcolati diversi valori di identificazione univoca del colore, come HSV, HSL e Luma, oltre a RGB. I valori HSL (“Hue Saturation Lightness”) risulteranno poi fondamentali per rimuovere la luminosità e la saturazione dai fotogrammi e ottenere così il colore reale. A questo punto per ogni video sono stati salvati in un JSON i colori principali.</p>
+                    <p><strong>Analisi colori</strong></p>
+                    <p>L’analisi del colore è consistita nel creare un dataframe con tutti i video associati al proprio colore principale e alla data di pubblicazione del video.
+                    Durante lo studio è emerso come la maggior parte dei colori fossero su scale di grigio e, per ottenere il colore principale, è stato necessario rimuovere la saturazione e luminosità da ogni colore. Per questo motivo l’analisi è stata effettuata partendo dai valori HSL e prendendo come riferimento solo il valore “H”, ossia la Hue. Ottenuta la Hue, questa è stata tramutata in rgb. A questo punto, avrebbe avuto poco senso rappresentare ogni singolo colore dello spettro rgb, e quindi è stato effettuato un K-means clustering, raggruppando i colori in 10 macrocategorie che non erano altro che la sintesi di tutti colori dello spettro raggruppati per similarità. A questo punto, grazie all’utilizzo di un bar chart dinamico, è stata rappresentata la presenza nel tempo di determinati colori, ordinati per data di pubblicazione. I risultati sono stati quelli esposti nel sito di riferimento.</p>
+                    <p>Il procedimento per le thumbnails è stato il medesimo.</p>
                 </div>
             </div>
             <hr>
@@ -378,6 +410,45 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
     </div>
 </div>
 
+<div id="frame-color" class="anchor-offset" style="text-align: center;">
+    <h1 style="color: white; font-size: 48px;">Conclusioni</h1>
+</div>
+
+<div style="position: relative; width: 100%; padding-right: 200px; padding-left: 200px;">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">
+        </div>
+        <div class="col-md-6">
+            <hr>
+            <p>adawdad</p>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_comments_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_likes_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_views_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
+            <div class="container">
+                <div class="header">
+                    <button type="button" class="collapsible">Technical analysis</button>
+                </div>
+                <div class="content">
+                    <p>Relazione tecnica sulla regressione: Ai fini dell'analisi di regressione sono state prese in considerazione diverse variabili dipendenti (views, likes e comments) contro un panel di regressori, composto dalle variabili legate all'immagine, all'audio e intrinsecamente al canale del podcast.</p>
+                    <p>Il dataset originale conteneva per le variabili sull'immagine, le scale RGB, HSL ,HSV e LUMA, nonché il conteggio delle persone nella miniatura.</p>
+                    <p>Sono stati rimosse dal dataset tutti i record con data di pubblicazione assente, in quanto necessaria per creare la variabile dei "giorni trascorsi dalla data di pubblicazione".</p>
+                    <p>Il dataset finale prevede l'assenza di missing values sulle feature audio. Il campionamento di un minor numero di audio rispetto alle caratteristiche video ha comportato una consistente riduzione del dataset in termini di record. Nonostante il tentativo d'uso di tecniche per risolvere l'assenza di bilanciamento nel dataset (sottocampionamento, sovracampionamento e SMOTE), è stato preferito mantenere inalterato il dataset originale rispetto alla presenza di dati sintetici, mirando a includere features che permettano di superare le differenze individuali esplicando le variabili dipendenti.</p>
+                    <p>Al fine di ottenere misure direttamente interpretabili, le variabili audio sono state standardizzate dividendo la rispettiva media per la standard deviation.</p>
+                    <p>Dall'analisi di correlazione è emerso che i colori della scala RGB risultano altamente correlati fra loro, essendo i colori finali combinazioni fra questi. La scala HSL presenta le minori correlazioni e una maggior esplicabilità. Sono state in seguito rimosse le seguenti variabili altamente correlate:  standardized_mfcc_3, standardized_spectral_rolloff,  standardized_rms_energy e Total_Videos.</p>
+                    <p>La matrice di correlazione finale presenta correlazione massima di +0.64 (fra lo standardized_mfcc_2 e lo standardized_spectral_centroid) e minima di -0.44 (fra lo standardized_mfcc_1 e audio_kurtosis).</p>
+                    <p>Segue in seguito l'outlier detection: se, in prima battuta è stato deciso di eseguirla su tutte le variabili, si è riscontrato che, stante la perdita di troppi record, un buon risultato di compromesso risultava dall'applicare l'outlier detection alle variabili dipendenti, non risultati da elaborazioni proprie ma oggetto di acquisizione esterna.</p>
+                    <p>Passando all'analisi di regressione, per le variabili dipendenti in oggetto è stato, in prima battuta, adoperato un modello di regressione adatto a variabili di conteggio, ovvero un modello di tipo Poisson. Tale processo richiederebbe che la relativa media e varianza, denotate come lambda, coincidano: sui dati tale ipotesi non è riscontrata, pertanto si è proceduto alla stima di un modello adatto a dati di conteggio sovradispersi, in cui la varianza del processo è superiore alla relativa media, quale il modello Binomiale Negativo.</p>
+                    <p>La stima è stata effettuata con la specificazione di un tipo di matrice di covarianza robusta per tenere conto di eventuali problemi sulla matrice di correlazione.</p>
+                    <p>L'interpretazione dei coefficienti non è diretta, in quanto il link fra la variabile risposta e il predittore lineare è dato dal logaritmo. Segue che prendere l'esponente dei coefficienti può riportare misure più comprensibili, ovvero, se al di sopra di 1, la percentuale in eccesso prodotta grazie ad un aumento di un regressore, viceversa se inferiore a 1, la percentuale in difetto prodotta dall'aumento di un regressore. In termini esplicativi risulta più conveniente applicare l'esponenziale e sottrarre 1, in modo tale da riportare le differenze sulla rispettiva scala positivi/negativi (anziché solo positivi).</p>
+                    <p>Limitazioni relative all'analisi potrebbero essere probabilmente superabili con l'uso di un dataset più esteso (la riduzione al 40% degli audio potrebbe aver ridotto l'ampiezza dell'analisi e influenzato le relative variabili).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--
 <div class="row pb-5">
