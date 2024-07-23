@@ -11,7 +11,7 @@ header_type: hero #base, post, hero,image, splash
 header_img: assets/images/Microphone.jpg
 header_title: "Youtube e i Podcast: <br>
 L'Ascesa nella Nuova Era di Contenuti Digitali"
-subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
+# subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
 ---
 <!-- Custom width and offset -->
 <div class="custom-col custom-offset"> </div>
@@ -52,7 +52,93 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
         margin-top: 20px;
         color: white;
     }
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .collapsible {
+        background: linear-gradient(45deg, transparent 45%, white 45%, white 55%, transparent 55%);
+        background-size: 200% 200%;
+        background-position: 0% 100%;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 10px;
+        width: auto;
+        height: auto;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        border-radius: 5px;
+        transform-origin: right top;
+        transform: rotate(0deg);
+        transition: transform 0.3s;
+        display: inline-block;
+        animation: slideBackground 2s infinite linear;
+    }
+
+    .collapsible:focus {
+        outline: none;
+        border: none;
+    }
+
+    .collapsible.active {
+        transform: rotate(-90deg);
+        animation: none; /* Disabilita animazione quando attivo */
+    }
+
+    .content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: rgba(24, 24, 24, 0.8); /* nero con 80% di opacità */
+        color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: -50px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @keyframes slideBackground {
+        0% {
+            background-position: 200% 100%;
+        }
+        100% {
+            background-position: 0% 50%;
+    }
+}
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.parentElement.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    });
+</script>
 
 <div class="container py-3">
     <div class="row">
@@ -64,6 +150,15 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
             <p>La semplicità di fruizione dello streaming, la crescente domanda di contenuti digitali da parte dei consumatori finali e il proliferare di nuove piattaforme distributive come Spotify inizialmente, e Youtube poi, hanno contribuito a renderli uno dei contenuti principali della nostra “dieta mediatica”.</p> 
             <p>Il termine nacque quando l'uso dei feed RSS divenne popolare per lo scambio di registrazioni audio su computer, palmari, lettori di musica digitale e anche telefoni cellulari. L'origine più accreditata del termine podcasting è un articolo apparso sul quotidiano britannico The Guardian a firma di Ben Hammersley, Audible Revolution, in cui l'articolista, per definire il nuovo fenomeno di file audio in formato MP3 disponibili su supporti facilmente trasportabili come l'iPod e la possibilità di costruire un palinsesto completamente digitale senza passare per l'etere, cercava di trovare un termine-ombrello che definisse il tutto.</p>  
             <p>Secondo la ricerca IPSOS 2023, il 39% degli italiani ha ascoltato podcast nell’ultimo mese. In numeri assoluti, tutto ciò si traduce in circa 11.9 milioni di ascoltatori mensili di podcast in Italia.</p>
+            <div class="container">
+                <div class="header">
+                    <button type="button" class="collapsible">Technical analysis</button>
+                </div>
+                <div class="content">
+                    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    Traduzione del 1914 di H. Rackham</p>
+                </div>
+            </div>
             <p>Daria Corrias, autrice e documentarista radiofonica che abbiamo avuto il piacere di intervistare, si esprime così riguardo all'avvento dei Podcast nel nostro paese:</p>
             <div class="quote-box">
                 Ricordo che c'erano moltissimi interrogativi e infinite discussioni su come questo 'Podcast' potesse rappresentare effettivamente un formato valido.
@@ -83,7 +178,7 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
                 <div class="author">- Daria Corrias</div>
             </div>
             <p>Per rispondere a queste domande, abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube d'oltreoceano nel mese di Maggio 2024, dal seguente link:</p>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%;"></vegachart>                 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>                 
             <br>
             <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
@@ -149,9 +244,22 @@ subtitle: "Come è cambiato il mondo dei podcast negli ultimi 10 anni?"
             <br>
             <p>Questo trend solleva interrogativi importanti. Cosa sta alimentando l'incremento dei feedback negativi? È un fenomeno isolato o si verifica su tutte le piattaforme social? </p> 
             <p>Capire le ragioni dietro l'aumento dei commenti negativi è cruciale per i creatori di contenuti. In un mondo sempre più connesso, mantenere un rapporto positivo con il proprio pubblico è una sfida complessa. Se da un lato, i commenti negativi possono indicare aree di miglioramento, dall'altro, potrebbero anche contribuire ad accrescere la visibilità e il dibattito attorno ai contenuti. </p>
-            <br>
-            <br>
-            <br>
+            <div class="container">
+                <div class="header">
+                    <button type="button" class="collapsible">Technical analysis</button>
+                </div>
+                <div class="content">
+                    <p>Abbiamo effettuato una sentiment analysis sui commenti ai video utilizzando VADER per determinare la polarità dei sentimenti espressi, sia positivi che negativi.</p>
+                    <p>VADER è uno strumento di analisi del sentimento che assegna punteggi di positività o negatività a oltre 7.000 parole ed emoticon, basandosi su lessici di sentimenti noti.</p>
+                    <p>Inoltre, utilizza una serie di regole di corrispondenza dei modelli scritte a mano, come le negazioni e gli intensificatori, per modificare il contributo dei punteggi delle parole originali al sentimento generale del testo.</p>
+                    <p>Si sono utilizzati strumenti per pulire e preparare testi da commenti. Si sono utilizzati due funzioni di pulizia:
+                    una per rimuovere caratteri non alfanumerici e accenti,
+                    l'altra per gestire specifici elementi dei commenti di YouTube come URL, hashtag e menzioni.</p>
+                    <p>I risultati restituiti dal modell Vader sono i seguenti:
+                    {‘neg’: 0,125, ‘neu’: 0.595, ‘pos’: 0.28, ‘compound’: 0.604}.</p>
+                    <p>Per migliorare la qualità dei dati, sono stati selezionati solo i record con un valore di compound superiore a 0,6. Questo filtro ha ridotto il numero di record a circa 6 milioni, rispetto ai 18 milioni iniziali.</p>
+                </div>
+            </div>
             </p>
             <hr>
         </div>
