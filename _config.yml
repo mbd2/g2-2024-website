@@ -31,10 +31,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Riportare il github del gruppo di progetto e quello del sito web (se differente).
 # Tali informazioni appariranno nel Footer del sito.
 github_repo:
-  - name: "Group 0 - Project repository"
-    url: "https://github.com/sobigdata-master/progettone-template"
-  - name: "Group 0 - Website repository"
-    url: "https://github.com/sobigdata-master/progettone-template"
+  - name: "Group 2 - Project repository"
+    url: "https://github.com/mbd2/g2-2024-website.git"
+  - name: "Group 2 - Website repository"
+    url: "https://github.com/mbd2/g2-2024-website.git"
 
 
 
@@ -50,20 +50,28 @@ navbar:
     url: /
   nav:
     - title: Introduzione 
-      url: /bootstrap
+      url: /#introduzione
     #- title: Topic Modelling
     #  url: /jekyll-ssg
-    - title: Testo
-      url: /charts
+    - title: Topic Modeling
+      url: /#topic-modeling
+    - title: Sentiment Analysis
+      url: /#sentimenti-analysis
     - title: Audio
-      url: /folium-map
-    - title: Frame #Label
+      url: /#audio
+    - title: Frame color
+      url: /#frame-color
+
+
+
+    
+    #- title: Audio #Label
       #child:
         #- title: markdown cheatsheet #Label
         #  url: /markdown  #url
         #- title: kramdown cheatsheet #Label
         #  url: /kramdown #url
-    - title: Colori
+    #- title: Colori
       #child:
       #  - title: Demo
       #    url: /single

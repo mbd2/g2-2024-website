@@ -59,15 +59,18 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         margin: 20px auto;
     }
 
-    .container {
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        margin: 20px auto;
-    }
-
     .collapsible {
-        background: linear-gradient(45deg, transparent 45%, white 45%, white 55%, transparent 55%);
+        background: linear-gradient(45deg, 
+                                    transparent 0%, 
+                                    transparent 47%, 
+                                    rgba(255, 255, 255, 0.3) 50%,
+                                    rgba(255, 255, 255, 0.35) 51%,
+                                    rgba(255, 255, 255, 0.40) 52%,
+                                    rgba(255, 255, 255, 0.40) 53%,
+                                    rgba(255, 255, 255, 0.35) 54%,
+                                    rgba(255, 255, 255, 0.3) 55%, 
+                                    transparent 58%, 
+                                    transparent 100%);
         background-size: 200% 200%;
         background-position: 0% 100%;
         color: #ffffff;
@@ -78,7 +81,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         border: none;
         text-align: center;
         outline: none;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 5px;
         transform-origin: right top;
         transform: rotate(0deg);
@@ -113,12 +116,17 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         justify-content: flex-end;
     }
 
+    .anchor-offset {
+    scroll-margin-top: 90px; /* Aggiungi uno spazio extra sopra la sezione */
+    }
+
+
     @keyframes slideBackground {
         0% {
             background-position: 200% 100%;
         }
         100% {
-            background-position: 0% 50%;
+            background-position: 0% 100%;
     }
 }
 </style>
@@ -139,6 +147,10 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         }
     });
 </script>
+
+<div id="introduzione" class="anchor-offset" style="text-align: center;">
+    <h1 style="color: white; font-size: 48px;">Introduzione</h1>
+</div>
 
 <div class="container py-3">
     <div class="row">
@@ -193,7 +205,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
 
 
 
-<div style="text-align: center;">
+<div id="topic-modeling" class="anchor-offset" style="text-align: center;">
     <h1 style="color: white; font-size: 48px;">Topic Modelling</h1>
 </div>
 
@@ -225,7 +237,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
 </div>
 
 
-<div style="text-align: center;">
+<div id="sentimenti-analysis" class="anchor-offset" style="text-align: center;">
     <h1 style="color: white; font-size: 48px;">Sentiment analysis</h1>
 </div>
 
@@ -267,7 +279,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
 </div>
 
 
-<div style="text-align: center;">
+<div id="audio" class="anchor-offset" style="text-align: center;">
     <h1 style="color: white; font-size: 48px;">Analisi tracce audio</h1>
 </div>
 
@@ -297,7 +309,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
 
 
 
-<div style="text-align: center;">
+<div id="frame-color" class="anchor-offset" style="text-align: center;">
     <h1 style="color: white; font-size: 48px;">Frame color analysis</h1>
 </div>
 
@@ -352,6 +364,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
 </div>
 
 
+<!--
 <div class="row pb-5">
     <div class="col-md-12 col-sm-12">
         <div class="card-container">
@@ -382,3 +395,4 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         </div>
     </div>
 </div>
+-->
