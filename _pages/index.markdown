@@ -186,20 +186,20 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <br>
             <br>
             <h4 style="text-align: center;">Grafico 3: frequenza di pubblicazione</h4>
-            <p style="text-align: center;">Nel grafico 3 vengono riportate le probabilità di osservare una specifica frequenza di pubblicazione e la probabilità di osservare al più una determinata frequenza di pubblicazione. La frequenza di pubblicazione è calcolata come l'inverso della differenza temporale tra le pubblicazioni in mesi, per cui se un canale pubblica ogni 30 giorni, la frequenza di pubblicazione sarà 1.  In generale l'80% dei canali ha una frequenza di pubblicazione pari a 18 pubblicazioni al mese. Rileva la bassa rilevanza di frequenze di pubblicazione comprese fra 18 e 26 pubblicazioni mensili, nonché i canali che pubblicano con cadenza quasi giornaliera fra le 26 e le 30 pubblicazioni al mese.</p> 
+            <p style="text-align: center;">Nel grafico vengono riportate le probabilità di osservare una specifica frequenza di pubblicazione e la probabilità di osservare al più una determinata frequenza di pubblicazione. La frequenza di pubblicazione è calcolata come l'inverso della differenza temporale tra le pubblicazioni in mesi, per cui se un canale pubblica ogni 30 giorni, la frequenza di pubblicazione sarà 1.  In generale l'80% dei canali ha una frequenza di pubblicazione pari a 18 pubblicazioni al mese. Rileva la bassa rilevanza di frequenze di pubblicazione comprese fra 18 e 26 pubblicazioni mensili, nonché i canali che pubblicano con cadenza quasi giornaliera fra le 26 e le 30 pubblicazioni al mese.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <br>
             <h4 style="text-align: center;">Grafico 4: visualizzazioni per pubblicazione</h4>
-            <p style="text-align: center;">Nel grafico 4, per ciascun canale, vengono mostrati, in ordine temporale, i podcast, nonché le relative visualizzazioni evidenziate dalla dimensione del pallino.</p> 
+            <p style="text-align: center;">Nel grafico, per ciascun canale, vengono mostrati, in ordine temporale, i podcast, nonché le relative visualizzazioni evidenziate dalla dimensione del pallino.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/beeswarm_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
             <br>
             <br>
             <h4 style="text-align: center;">Grafico 5: media numero di podcast ogni 30 giorni</h4>
-            <p style="text-align: center;">Il grafico 5 riporta l'andamento temporale medio del numero di podcast pubblicati. Nel cordo del tempo il fenomeno dei podcast ha riscontrato un particolare successo sempre crescente.</p> 
+            <p style="text-align: center;">Il grafico riporta l'andamento temporale medio del numero di podcast pubblicati. Nel cordo del tempo il fenomeno dei podcast ha riscontrato un particolare successo sempre crescente.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/temporal_chart 2.json" style="width: 80%; height: 100vh;"></vegachart>
-            <h4 style="text-align: center; margin-top: -60px;">Grafico 6: frequenza di pubblicazione</h4>
-            <p style="text-align: center;">Il grafico 6 riporta invece, su una scala logaritmica, le puntate di maggior e minor successo per ciascun canale.</p> 
+            <h4 style="text-align: center; margin-top: -60px;">Grafico 6: successi e insuccessi dei canali</h4>
+            <p style="text-align: center;">Il grafico riporta su una scala logaritmica, le puntate di maggior e minor successo per ciascun canale.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/std_views_podcast_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <div class="container">
@@ -249,11 +249,12 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
                     <button type="button" class="collapsible">Technical analysis</button>
                 </div>
                 <div class="content">
-                    <p>Tramite le API di Google siamo riusciti a scaricare circa 13.218 documenti complessivi. Per il preprocessing, abbiamo rimosso le annotazioni come [music], [laughing], ecc., utilizzando un’espressione regolare. Abbiamo tokenizzato il testo in parole singole, rimosso le stopword e i numeri, eliminato la punteggiatura e convertito tutte le parole in minuscolo.</p>
-                    <p>Abbiamo utilizzato il modello Word2Vec di Google-news-300 per creare un sistema di classificazione non supervisionato basato su embedding. Questo ci ha permesso di ottenere il vettore di embedding per ciascuna parola nel testo preprocessato utilizzando il modello Word2Vec, e di restituire la media di questi vettori.</p>
-                    <p>Successivamente, abbiamo definito un dizionario con diversi temi, quali: ‘politics’, ‘sports’, ‘economy’, ‘health’, ‘technology’, ‘culture’, ‘education’, ‘environment’, ‘crime’ e ‘entertainment’. Abbiamo calcolato la media dei vettori di embedding per le parole chiave di ciascun argomento.</p>
-                    <p>Una volta ottenuto il vettore dei topic, abbiamo calcolato la similarità del coseno tra quest’ultimo e il vettore delle trascrizioni, e abbiamo salvato per ciascun URL il topic con la similarità del coseno più alta.</p>
-                    <p>Da un punto di vista qualitativo, abbiamo controllato che i topic assegnati fossero corretti rispetto all’argomento trattato nel video. Su 90 video analizzati, abbiamo riscontrato un’assegnazione errata dei topic per 25 URL.</p>
+                    <p>L'obiettivo di questo progetto è estrarre i topic prevalenti all'interno di un dataset di podcast. Per raggiungere questo scopo, sono stati eseguiti diversi passaggi, inclusi il preprocessing dei dati, la classificazione basata su embedding e la valutazione della qualità dei topic identificati.</p>
+                    <p>Preprocessing delle Trascrizioni: Abbiamo rimosso annotazioni come "[music]", "[laughing]" usando espressioni regolari.</p>
+                    <p>Tokenizzazione e Pulizia: Il testo è stato tokenizzato in singole parole, sono stati rimossi numeri e punteggiatura, e tutte le parole sono state convertite in minuscolo.</p>
+                    <p>Abbiamo utilizzato il modello Word2Vec di Google-news-300, un modello pre-addestrato su un vasto corpus di notizie. Questo modello rappresenta ogni parola come un vettore di 300 dimensioni. Per ciascuna parola nella trascrizione, abbiamo ottenuto il vettore di embedding usando Word2Vec e calcolato la media di questi vettori per ottenere il vettore rappresentativo della trascrizione.</p>
+                    <p>Successivamente, abbiamo definito un dizionario con diversi temi, tra cui: "politics", "sports", "economy", "health", "technology", "culture", "education", "environment", "crime" e "entertainment". Per ciascun tema, abbiamo calcolato il vettore di embedding come media dei vettori delle parole chiave associate. Per ogni trascrizione, abbiamo calcolato la Cosine Similarity tra il vettore della trascrizione e il vettore di ciascun topic. Abbiamo assegnato il topic con la Cosine Similarity più alta a ciascuna trascrizione.</p>
+                    <p>Infine,  abbiamo effettuato un  analisi qualitativa su 90 dei video analizzati e abbiamo riscontrato che su 25 URL l'assegnazione del topic era errata.</p>
                 </div>
             </div>
             </p>
