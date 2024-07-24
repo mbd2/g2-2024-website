@@ -175,32 +175,39 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             </div>
             <p>Per effettuare le nostre analisi, ci siamo focalizzati sugli Stati Uniti e abbiamo preso in considerazione 24 tra i più seguiti canali Podcast sulla piattaforma YouTube nel mese di Maggio 2024, a <a title="Link" href="https://rephonic.com/charts/youtube/united-states/popular-podcasts" target="blank">questo link</a>.</p>
             <br>
-            <h4 style="text-align: center;">Grafico 1: Overview sui podcast in analisi</h4>
+            <h4 style="text-align: center;">Grafico 1: Statistiche descrittive sui Podcast analizzati</h4>
+            <p style="text-align: center;">Dalla visualizzazione incrociata dei grafici a seguire si evidenzia come i canali con il numero di visualizzazioni media più alte non siano necessariamente quelli con più podcast, ma potrebbero seguire altre metriche, quali la durata media o il numero di iscritti per canale.</p>
             <vegachart schema-url="{{site.baseurl}}/assets/charts/combined_chart_ulteriore.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <br>
             <br>
-            <h4 style="text-align: center;">Grafico 2: Numero di views e contenuti pubblicati per mese di pubblicazione</h4>
-            <p style="text-align: center;">Nel grafico a seguire vediamo secondo la data di pubblicazione quante sono le visualizzazioni totali dei podcast da noi esaminati, nel successivo invece calcoliamo quante sono state le pubblicazioni rispetto a quel mese. I due grafici sotto sono interattivi e mostrano le statistiche delle visualizzazioni e delle pubblicazioni per ciascun mese. L’utente può selezionare un mese per vedere i dettagli associati a quel periodo.</p> 
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>                
+            <h4 style="text-align: center;">Grafico 2: Distribuzione percentuale dei Podcast nel dataset</h4>
+            <p style="text-align: center;">Di seguito, viene invece, riportato, in base alla data di pubblicazione del podcast, il numero di visualizzazioni totali e il numero di pubblicazioni per mese. Il mese a cui appartengono i podcast con più visualizzazione risulta Gennaio, quello con meno visualizzazioni Luglio. Nel mese precedente, ovvero a Giugno, si riscontra il numero minore di pubblicazioni, mentre quello maggiore si registra a Marzo.</p>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/area_chart_podcast_distribution_dataset_black.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <br>
-            <h4 style="text-align: center;">Grafico 3: frequenza di pubblicazione</h4>
-            <p style="text-align: center;">Nel grafico vengono riportate le probabilità di osservare una specifica frequenza di pubblicazione e la probabilità di osservare al più una determinata frequenza di pubblicazione. La frequenza di pubblicazione è calcolata come l'inverso della differenza temporale tra le pubblicazioni in mesi, per cui se un canale pubblica ogni 30 giorni, la frequenza di pubblicazione sarà 1.  In generale l'80% dei canali ha una frequenza di pubblicazione pari a 18 pubblicazioni al mese. Rileva la bassa rilevanza di frequenze di pubblicazione comprese fra 18 e 26 pubblicazioni mensili, nonché i canali che pubblicano con cadenza quasi giornaliera fra le 26 e le 30 pubblicazioni al mese.</p> 
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <h4 style="text-align: center;">Grafico 3: Distribuzione delle log-visualizzazioni per canale</h4>
+            <p style="text-align: center;">Il grafico riporta su una scala logaritmica, le puntate di maggior e minor successo per ciascun canale.</p> 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/std_views_podcast_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <br>
-            <h4 style="text-align: center;">Grafico 4: visualizzazioni per pubblicazione</h4>
+            <h4 style="text-align: center;">Grafico 4: Visualizzazioni per canale</h4>
             <p style="text-align: center;">Nel grafico, per ciascun canale, vengono mostrati, in ordine temporale, i podcast, nonché le relative visualizzazioni evidenziate dalla dimensione del pallino.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/beeswarm_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
             <br>
             <br>
-            <h4 style="text-align: center;">Grafico 5: media numero di podcast ogni 30 giorni</h4>
-            <p style="text-align: center;">Il grafico riporta l'andamento temporale medio del numero di podcast pubblicati. Nel cordo del tempo il fenomeno dei podcast ha riscontrato un particolare successo sempre crescente.</p> 
+            <h4 style="text-align: center;">Grafico 5: Numero di views e contenuti pubblicati per mese di pubblicazione</h4>
+            <p style="text-align: center;">Di seguito, viene invece, riportato, in base alla data di pubblicazione del podcast, il numero di visualizzazioni totali e il numero di pubblicazioni per mese. Il mese a cui appartengono i podcast con più visualizzazione risulta Gennaio, quello con meno visualizzazioni Luglio. Nel mese precedente, ovvero a Giugno, si riscontra il numero minore di pubblicazioni, mentre quello maggiore si registra a Marzo.</p> 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/views_pub_chart_BLACK_VERO 2.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>                
+            <br>
+            <br>
+            <h4 style="text-align: center;">Grafico 6: Numero medio di Podcast</h4>
+            <p style="text-align: center;">Il grafico riporta l'andamento temporale medio del numero di podcast pubblicati. Nel cordo del tempo il fenomeno dei podcast ha riscontrato un particolare successo sempre crescente, con un numero medio di podcast pubblicati che al 2024 si attesta a circa 13.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/temporal_chart 2.json" style="width: 80%; height: 100vh;"></vegachart>
-            <h4 style="text-align: center; margin-top: -60px;">Grafico 6: successi e insuccessi dei canali</h4>
-            <p style="text-align: center;">Il grafico riporta su una scala logaritmica, le puntate di maggior e minor successo per ciascun canale.</p> 
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/std_views_podcast_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <h4 style="text-align: center; margin-top: -80px;">Grafico 7: Frequenza di pubblicazione</h4>
+            <p style="text-align: center;">Nel grafico vengono riportate le probabilità di osservare una specifica frequenza di pubblicazione e la probabilità di osservare al più una determinata frequenza di pubblicazione, calcolata come l'inverso della differenza temporale tra le pubblicazioni in mesi (per cui se un canale pubblica ogni 30 giorni, la frequenza di pubblicazione sarà 1). In generale l'80% dei canali ha una frequenza di pubblicazione molto alte, pari a 18 pubblicazioni al mese. Rileva la bassa rilevanza di frequenze di pubblicazione comprese fra 18 e 26 pubblicazioni mensili, nonché i canali che pubblicano con cadenza giornaliera fra le 26 e le 30 pubblicazioni al mese.</p> 
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
             <br>
             <div class="container">
                 <div class="header">
@@ -238,8 +245,8 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <vegachart schema-url="{{site.baseurl}}/assets/charts/TOPIC_PROJECT_BLACK_VERO_3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
             <br>
             <p>Dal 2013 i temi ricorrenti per gli episodi podcast da noi analizzati erano tecnologia, con una preponderanza maggiore di questo tema sugli altri e poi altri temi come crime, health e entertainment. Particolarmente interessante è vedere come il tema politics compaia nel 2017 per poi arrivare ad essere uno dei temi principali dal 2022 fino al 2024. C’è da sottolinerare però che il canale podcast MedaisTouch e il canale di Brian Tyler Cohen Podcast (che trattano principalmente di temi politici) sono quelli con il maggior numero di episodi sul complessivo rispetto a questi anni.</p>
-            <p>Un altro aspetto interessante che emerge è come l’argomento crime sia ancora molto utilizzato dentro i podcast, anche in questo caso va fatto però presente che nel nostro dataframe ci sono diversi Canali che sono meramente True Crime come Let’s Read e Law&crimeNetwork e Baley Sarian, confermando che alcuni podcaster preferiscono utilizzare questo topic perché di maggiore appeal, come in precedenza detto da Daria Corrias.</p>
-            <p>Di seguito invece abbiamo un grafico a bolle su quali sono i temi principalmente tratti rispetto agli argomenti. Se cliccate dentro la bolla è possibile visualizzare tutti i temi principalmente discussi all’interno dei diversi canali podcast.</p>
+            <p>Un altro aspetto interessante che emerge è come l’argomento crime sia ancora molto utilizzato dentro i podcast, anche in questo caso va fatto però presente che nel nostro dataset ci sono diversi Canali che sono meramente True Crime come Let’s Read e Law&crimeNetwork e Baley Sarian, confermando che alcuni podcaster preferiscono utilizzare questo topic perché di maggiore appeal, come in precedenza detto da Daria Corrias.</p>
+            <p>Di seguito invece abbiamo un grafico a bolle sui quali sono i temi principalmente tratti rispetto ai canali Podcast. Se cliccate dentro la bolla è possibile visualizzare tutti i temi principalmente discussi all’interno dei diversi canali podcast.</p>
             <br>
             <div class="flourish-embed flourish-hierarchy" data-src="visualisation/18816599"><script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>
@@ -428,7 +435,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <p><strong>Colori più vivaci e saturi</strong> generalmente attraggono più spettatori e visualizzazioni. Tuttavia, in modo piuttosto inaspettato, anche i video con <strong>tonalità più scure comportano un aumento del numero di visualizzazioni.</strong></p>
             <p>Per quanto riguarda la durata del video e le caratteristiche del canale, i <strong>video più lunghi</strong> tendono ad accumulare più visualizzazioni. Canali con un numero maggiore di iscritti tendono ad avere una maggiore visibilità in termini di visualizzazioni. In modo scontato, video più vecchi sono legati a maggiori più visualizzazioni, in virtù della loro permanenza nel tempo.</p>
             <br>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_views_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_views_3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <h4 style="text-align: center;">Numero di Mi Piace del podcast</h4>
             <p>Si conferma che <strong>suoni meno acuti</strong> e alcune caratteristiche audio più specifiche (come i coefficienti MFCC 1 e 5) <strong>tendano ad avere più mi piace</strong>. Esiste una relazione positiva tra la "frequenza media" del contenuto audio del video e il numero di likes che il video riceve, ovvero in altri termini, podcast che hanno una <strong>maggiore concentrazione di energia nelle frequenze alte</strong> tendono a essere più apprezzati dagli spettatori, indicando una preferenza per audio chiari e caratterizzati da frequenze alte. Inoltre a incidere sul numero dei mi piace, diversamente da quanto accadeva per le visualizzazioni, incide positivamente la distribuzione delle ampiezze sonore: <strong>quando le ampiezze sonore più alte sono più frequenti di quelle basse si riscontra un aumento del numero di likes</strong>, pertanto “timbri” o “picchi di volume” più frequenti potrebbero indurre l’ascoltatore a mettere mi piace più frequentemente.</p>
@@ -436,14 +443,14 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <p>Inoltre, le caratteristiche della <strong>miniatura del podcast</strong>, elemento di “prima interazione” con l’utente, influenzano positivamente il numero dei mi piace messi al video: in particolare, sia immagini caratterizzate da <strong>colori più intensi che immagini maggiormente luminose</strong>, sono associate ad un maggior numero di likes.</p>
             <p>Contrariamente a quanto accade per le visualizzazioni, <strong>la durata del video influisce negativamente sui mi piace</strong>: video più lunghi tendono a ricevere meno mi piace. Infine, <strong>video con un numero maggiore di persone nella miniatura ricevono tendenzialmente più mi piace</strong></p>
             <br>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_likes_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_likes_3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <h4 style="text-align: center;">Numero di Commenti del podcast</h4>
             <p>Un ritmo più veloce e caratteristiche audio specifiche (MFCC 1 e 5) sono associati a un maggiore numero di commenti, mentre alcune caratteristiche audio (MFCC 4 e 7) hanno l'effetto opposto.</p>
             <p>Con riferimento all’immagine, si evidenzia che <strong>tonalità più elevate e colori più intensi</strong> siano correlati a più commenti, mentre, diversamente, la luminosità non sembra avere un grande impatto. Le <strong>miniature con immagini luminose e tonalità più vivaci</strong> permettono di riscontrare un aumento del numero di commenti.</p>
             <p><strong>I video più lunghi e quelli più datati tendono ad avere meno commenti</strong>, probabilmente per un declino dell’interesse e dell’attenzione degli utenti nel tempo. In ultima istanza, la presenza di più persone nella miniatura sembra essere legata ad un maggior numero di commenti.</p>
             <br>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_comments_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>           
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_comments_3.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>           
             <br>
             <div class="container">
                 <div class="header">
