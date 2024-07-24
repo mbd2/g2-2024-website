@@ -88,7 +88,7 @@ Il file `_config.yml` contiene le impostazioni del sito web, come il titolo, la 
 
 
 ```yaml
-title: "SBD Progettone Template"
+title: "US PODCAST BIG DATA ANALYSIS"
 subtitle: "un template per i progetti del master"
 ...
 ```

@@ -190,19 +190,18 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
             <vegachart schema-url="{{site.baseurl}}/assets/charts/frequency_PDF_CDF_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
             <br>
-            <h4 style="text-align: center;">Grafico 4: frequenza di pubblicazione</h4>
+            <h4 style="text-align: center;">Grafico 4: visualizzazioni per pubblicazione</h4>
             <p style="text-align: center;">Nel grafico 4, per ciascun canale, vengono mostrati, in ordine temporale, i podcast, nonché le relative visualizzazioni evidenziate dalla dimensione del pallino.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/beeswarm_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart> 
             <br>
             <br>
-            <h4 style="text-align: center;">Grafico 5: frequenza di pubblicazione</h4>
+            <h4 style="text-align: center;">Grafico 5: media numero di podcast ogni 30 giorni</h4>
             <p style="text-align: center;">Il grafico 5 riporta l'andamento temporale medio del numero di podcast pubblicati. Nel cordo del tempo il fenomeno dei podcast ha riscontrato un particolare successo sempre crescente.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/temporal_chart 2.json" style="width: 80%; height: 100vh;"></vegachart>
             <h4 style="text-align: center; margin-top: -60px;">Grafico 6: frequenza di pubblicazione</h4>
             <p style="text-align: center;">Il grafico 6 riporta invece, su una scala logaritmica, le puntate di maggior e minor successo per ciascun canale.</p> 
             <vegachart schema-url="{{site.baseurl}}/assets/charts/std_views_podcast_chart_leggero.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
-            </p>
             <div class="container">
                 <div class="header">
                     <button type="button" class="collapsible">Technical analysis</button>
@@ -410,7 +409,7 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
     </div>
 </div>
 
-<div id="frame-color" class="anchor-offset" style="text-align: center;">
+<div id="conclusioni" class="anchor-offset" style="text-align: center;">
     <h1 style="color: white; font-size: 48px;">Conclusioni</h1>
 </div>
 
@@ -420,19 +419,37 @@ L'Ascesa nella Nuova Era di Contenuti Digitali"
         </div>
         <div class="col-md-6">
             <hr>
-            <p>adawdad</p>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_comments_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <p>Ritornando al punto focale, cosa influenza le visualizzazioni, i like e il numero di commenti di un podcast?</p>
+            <p>Dalle nostre analisi emergono diverse evidenze significative in relazione a ciascuna di queste variabili.</p>
+            <br>
+            <h4 style="text-align: center;">Numero di Visualizzazioni del podcast</h4>
+            <p>Con riferimento all’audio del podcast, <strong>i suoni con un pitch minore, ovvero meno acuti e più gravi tendono a catturare più attenzione</strong> e generare un maggior numero di visualizzazioni. Alcune caratteristiche specifiche dell'audio, come i coefficienti MFCC 1, 6 e 7, sono associate a un loro aumento, mentre altri coefficienti, come MFCC 4 e 5, sembrano avere un effetto negativo.</p>
+            <p><strong>Colori più vivaci e saturi</strong> generalmente attraggono più spettatori e visualizzazioni. Tuttavia, in modo piuttosto inaspettato, anche i video con <strong>tonalità più scure comportano un aumento del numero di visualizzazioni.</strong></p>
+            <p>Per quanto riguarda la durata del video e le caratteristiche del canale, i <strong>video più lunghi</strong> tendono ad accumulare più visualizzazioni. Canali con un numero maggiore di iscritti tendono ad avere una maggiore visibilità in termini di visualizzazioni. In modo scontato, video più vecchi sono legati a maggiori più visualizzazioni, in virtù della loro permanenza nel tempo.</p>
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_views_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <br>
+            <h4 style="text-align: center;">Numero di Mi Piace del podcast</h4>
+            <p>Si conferma che <strong>suoni meno acuti</strong> e alcune caratteristiche audio più specifiche (come i coefficienti MFCC 1 e 5) <strong>tendano ad avere più mi piace</strong>. Esiste una relazione positiva tra la "frequenza media" del contenuto audio del video e il numero di likes che il video riceve, ovvero in altri termini, podcast che hanno una <strong>maggiore concentrazione di energia nelle frequenze alte</strong> tendono a essere più apprezzati dagli spettatori, indicando una preferenza per audio chiari e caratterizzati da frequenze alte. Inoltre a incidere sul numero dei mi piace, diversamente da quanto accadeva per le visualizzazioni, incide positivamente la distribuzione delle ampiezze sonore: <strong>quando le ampiezze sonore più alte sono più frequenti di quelle basse si riscontra un aumento del numero di likes</strong>, pertanto “timbri” o “picchi di volume” più frequenti potrebbero indurre l’ascoltatore a mettere mi piace più frequentemente.</p>
+            <p>Per l’immagine, a determinare i likes al video, non è più, differentemente dalle visualizzazioni,l’intensità del colore o la sua luminosità, bensì la tonalità del colore. <strong>Tonalità più elevate nei frame</strong> del video sono associate in modo positivo a un maggior numero di likes.</p>
+            <p>Inoltre, le caratteristiche della <strong>miniatura del podcast</strong>, elemento di “prima interazione” con l’utente, influenzano positivamente il numero dei mi piace messi al video: in particolare, sia immagini caratterizzate da <strong>colori più intensi che immagini maggiormente luminose</strong>, sono associate ad un maggior numero di likes.</p>
+            <p>Contrariamente a quanto accade per le visualizzazioni, <strong>la durata del video influisce negativamente sui mi piace</strong>: video più lunghi tendono a ricevere meno mi piace. Infine, <strong>video con un numero maggiore di persone nella miniatura ricevono tendenzialmente più mi piace</strong></p>
             <br>
             <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_likes_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
             <br>
-            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_views_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>
+            <h4 style="text-align: center;">Numero di Commenti del podcast</h4>
+            <p>Un ritmo più veloce e caratteristiche audio specifiche (MFCC 1 e 5) sono associati a un maggiore numero di commenti, mentre alcune caratteristiche audio (MFCC 4 e 7) hanno l'effetto opposto.</p>
+            <p>Con riferimento all’immagine, si evidenzia che <strong>tonalità più elevate e colori più intensi</strong> siano correlati a più commenti, mentre, diversamente, la luminosità non sembra avere un grande impatto. Le <strong>miniature con immagini luminose e tonalità più vivaci</strong> permettono di riscontrare un aumento del numero di commenti.</p>
+            <p><strong>I video più lunghi e quelli più datati tendono ad avere meno commenti</strong>, probabilmente per un declino dell’interesse e dell’attenzione degli utenti nel tempo. In ultima istanza, la presenza di più persone nella miniatura sembra essere legata ad un maggior numero di commenti.</p>
+            <br>
+            <vegachart schema-url="{{site.baseurl}}/assets/charts/regression_comments_1.json" style="width: 100%; display: flex; justify-content: center;"></vegachart>           
             <br>
             <div class="container">
                 <div class="header">
                     <button type="button" class="collapsible">Technical analysis</button>
                 </div>
                 <div class="content">
-                    <p>Relazione tecnica sulla regressione: Ai fini dell'analisi di regressione sono state prese in considerazione diverse variabili dipendenti (views, likes e comments) contro un panel di regressori, composto dalle variabili legate all'immagine, all'audio e intrinsecamente al canale del podcast.</p>
+                    <p>Ai fini dell'analisi di regressione sono state prese in considerazione diverse variabili dipendenti (views, likes e comments) contro un panel di regressori, composto dalle variabili legate all'immagine, all'audio e intrinsecamente al canale del podcast.</p>
                     <p>Il dataset originale conteneva per le variabili sull'immagine, le scale RGB, HSL ,HSV e LUMA, nonché il conteggio delle persone nella miniatura.</p>
                     <p>Sono stati rimosse dal dataset tutti i record con data di pubblicazione assente, in quanto necessaria per creare la variabile dei "giorni trascorsi dalla data di pubblicazione".</p>
                     <p>Il dataset finale prevede l'assenza di missing values sulle feature audio. Il campionamento di un minor numero di audio rispetto alle caratteristiche video ha comportato una consistente riduzione del dataset in termini di record. Nonostante il tentativo d'uso di tecniche per risolvere l'assenza di bilanciamento nel dataset (sottocampionamento, sovracampionamento e SMOTE), è stato preferito mantenere inalterato il dataset originale rispetto alla presenza di dati sintetici, mirando a includere features che permettano di superare le differenze individuali esplicando le variabili dipendenti.</p>
